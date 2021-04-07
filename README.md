@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/meltinglab/battery-management">
-    <img src="images/bms4-icon.jpg" alt="Logo" width="80" height="70">
+    <img src="images/bms4-icon.jpg" alt="Logo" width="160" height="140">
   </a>
 
   <h3 align="center">Battery Management System</h3>
@@ -98,7 +98,7 @@ To get a local copy up and running follow these simple steps.
 Here is the list of the required add-ons:
 
 * Matlab Embedded Coder
-* Add2
+* TODO: add addons list
 
 ### Installation
 
@@ -115,7 +115,8 @@ Here is the list of the required add-ons:
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
+_For more examples, please refer to the [Documentation](https://github.com/meltinglab/battery-management/wiki)_
 
 
 
@@ -150,8 +151,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Anna Delli Noci - [@Danidotwav](https://github.com/Danidotwav) - anna.dellinoci@studio.unibo.it
+
 Michele Gazzarri - [@dinamitemic](https://github.com/dinamitemic) - michele.gazzarri@studio.unibo.it
+
 Carlo Edoardo Malaspina - [@CarloEdoardoMalaspina](https://github.com/CarloEdoardoMalaspina) - carlo.malaspina@studio.unibo.it
+
 Mirko Shtylla - [@mirkoshtylla](https://github.com/mirkoshtylla) - mirko.shtylla@studio.unibo.it
 
 
