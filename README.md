@@ -28,7 +28,7 @@
     Matlab implementation of a Battery Management System.
     It is meant to be runned on embedded devices.
     <br />
-    <a href="https://github.com/meltinglab/battery-management"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/meltinglab/battery-management/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/meltinglab/battery-management">View Demo</a>
@@ -63,7 +63,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -82,7 +81,6 @@ TODO: Write section
 
 * [MATLAB](https://it.mathworks.com/products/matlab.html)
 * [Simulink](https://it.mathworks.com/products/simulink.html)
-* Love
 
 
 
@@ -92,14 +90,16 @@ TODO: Write section
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+#### Software:
 
-* Install Matlab
-
-Here is the list of the required add-ons:
+* Matlab v2021a
+* Simulink v
+#### Add-on:
 
 * Matlab Embedded Coder
 * TODO: add addons list
-
+#### Hardware:
+* STM32F4 Discovery 
 ### Installation
 
 1. Clone the repo
@@ -113,7 +113,7 @@ Here is the list of the required add-ons:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+TODO: write section
 
 
 _For more examples, please refer to the [Documentation](https://github.com/meltinglab/battery-management/wiki)_
