@@ -3,7 +3,7 @@ CellThermalMass = 30000;
 %CellThermalMass = 527.6215;
 
 CellNumberForSegment = 10;
-SegmentNumber = 10;
+SegmentNumber = 3;
 
 CellResDeltaMin = 0.001; % Minimum resistance delta between cells [Ohm]
 CellResDeltaMax = 0.002; % Maximum resistance delta between cells [Ohm]
@@ -57,12 +57,5 @@ BusbarRes(1) = 0.05; %[Ohm]
 BusbarRes(2) = 0.05; %[Ohm]
 BusbarRes(3) = 0.05; %[Ohm]
 BusbarRes(4) = 0.05; %[Ohm]
-BusbarRes(5) = 0.05; %[Ohm]
-BusbarRes(6) = 0.05; %[Ohm]
-BusbarRes(7) = 0.05; %[Ohm]
-BusbarRes(8) = 0.05; %[Ohm]
-BusbarRes(9) = 0.05; %[Ohm]
-BusbarRes(10) = 0.05; %[Ohm]
-BusbarRes(11) = 0.05; %[Ohm]
 
 
