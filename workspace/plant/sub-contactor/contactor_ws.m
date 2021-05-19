@@ -17,8 +17,12 @@ PreInverterRes = 1000;
 DisChargerRes = 250;
 DisInverterRes = 250;
 
-%Capacitor
-ChargerCap = 5e-3;
-InverterCap = 2.5e-3;
+%FSM Constants
+VbattThersholdChrg = 0.8; %[%]
+VbattThresholdDis = 0.2;
+VbattMin = 1; %[Volt]
+DrivetrainEnDelay = 0.1; %[second]
+
+
 
 
