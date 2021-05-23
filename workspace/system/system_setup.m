@@ -2,6 +2,7 @@ run('battery_ws.m');
 run('contactor_ws.m');
 run('charger_ws.m');
 run('drivetrain_ws.m');
+run('battery_LUT.m');
 
 Simulink.defineIntEnumType('SystemState_t', ... 
 	{'Parking', 'Driving', 'Charging', 'Balancing'}, ...

@@ -58,4 +58,7 @@ BusbarRes(2) = 0.05; %[Ohm]
 BusbarRes(3) = 0.05; %[Ohm]
 BusbarRes(4) = 0.05; %[Ohm]
 
+%% SOC parameters
+SOCInit = 0.75;
+Ts = 0.1;
 
