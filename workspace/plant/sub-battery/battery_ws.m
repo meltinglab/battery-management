@@ -1,6 +1,6 @@
 %% Cells custom parameters
-CellThermalMass = 30000;
-%CellThermalMass = 527.6215;
+CellThermalMass = 5000;
+%CellThermalMass = 527.6215; 30000
 
 CellNumberForSegment = 10;
 SegmentNumber = 3;
@@ -18,10 +18,10 @@ end
 
 
 %% Thermal parameters
-AmbientTemperature = 25 + 273.15; %Ambient temperature [K]
+AmbientTemperature = 25; %Ambient temperature [degC]
 
 Cell2CellConductiveArea = 1e-2;
-Cell2CellConductiveThickness = 2;
+Cell2CellConductiveThickness = 0.1;
 Cell2CellConductiveThermConduct = 401;
 
 UpperSegmentConductiveArea = 0;
@@ -59,6 +59,7 @@ BusbarRes(3) = 0.05; %[Ohm]
 BusbarRes(4) = 0.05; %[Ohm]
 
 %% SOC parameters
-SOCInit = 0.75;
-Ts = 0.1;
-
+SOCInit = 0.95;
+Ts = 0.01;
+LUTBattery_Charge = [2.41,2.39,2.3];
+LUTBattery_Charge_Temp = [278.1499938964844,293.1499938964844,323.1499938964844];
