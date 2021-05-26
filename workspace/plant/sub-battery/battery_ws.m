@@ -5,18 +5,6 @@ CellThermalMass = 5000;
 CellNumberForSegment = 10;
 SegmentNumber = 3;
 
-CellResDeltaMin = 0.001; % Minimum resistance delta between cells [Ohm]
-CellResDeltaMax = 0.002; % Maximum resistance delta between cells [Ohm]
-
-%Generate additionl series resistance in every cell choosen as random
-%number between 1 mOhm and 2 mOhm
-for segment_index = 1 : SegmentNumber
-    for cell_index = 1 : CellNumberForSegment
-        CellSeriesRes(segment_index, cell_index) = CellResDeltaMin + rand(1,1)*(CellResDeltaMax - CellResDeltaMin);
-    end
-end
-
-
 %% Thermal parameters
 AmbientTemperature = 25; %Ambient temperature [degC]
 

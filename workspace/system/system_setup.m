@@ -3,6 +3,7 @@ run('contactor_ws.m');
 run('charger_ws.m');
 run('drivetrain_ws.m');
 run('battery_LUT.m');
+run('fault_parameters.m');
 
 Simulink.defineIntEnumType('SystemState_t', ... 
 	{'Parking', 'Driving', 'Charging', 'Balancing'}, ...
@@ -15,4 +16,4 @@ Simulink.defineIntEnumType('SystemState_t', ...
 
 load('bus_definitions.mat');
 
-DeltaVTargetMin = 0.1;
+DeltaVTargetMin = 0.0001;
