@@ -7,6 +7,9 @@ SegmentNumber = 3;
 
 %% Thermal parameters
 AmbientTemperature = 25; %Ambient temperature [degC]
+CellthermalMass = 8e-5; %Thermal mass [J/K]
+CellArea = 1e-100;
+CellConvectiveCoeff = 0.1e-5; % Heat transfer coefficient [W/(m^2 * K)]
 
 Cell2CellConductiveArea = 1e-2;
 Cell2CellConductiveThickness = 0.1;
@@ -29,16 +32,16 @@ LowerSegment2CaseConductiveThickness = 0;
 LowerSegment2CaseConductiveThermConduct = 0;
 
 %% Balancing circuit parameters
-PassiveBalancingRes(1) = 10;
-PassiveBalancingRes(2) = 10;
-PassiveBalancingRes(3) = 10;
-PassiveBalancingRes(4) = 10;
-PassiveBalancingRes(5) = 10;
-PassiveBalancingRes(6) = 10;
-PassiveBalancingRes(7) = 10;
-PassiveBalancingRes(8) = 10;
-PassiveBalancingRes(9) = 10;
-PassiveBalancingRes(10) = 10;
+PassiveBalancingRes(1) = 5;
+PassiveBalancingRes(2) = 5;
+PassiveBalancingRes(3) = 5;
+PassiveBalancingRes(4) = 5;
+PassiveBalancingRes(5) = 5;
+PassiveBalancingRes(6) = 5;
+PassiveBalancingRes(7) = 5;
+PassiveBalancingRes(8) = 5;
+PassiveBalancingRes(9) = 5;
+PassiveBalancingRes(10) = 5;
 
 %% Battery pack busbar resistance
 BusbarRes(1) = 0.05; %[Ohm]

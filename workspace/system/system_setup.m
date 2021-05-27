@@ -16,4 +16,6 @@ Simulink.defineIntEnumType('SystemState_t', ...
 
 load('bus_definitions.mat');
 
-DeltaVTargetMin = 0.0001;
+DeltaVTargetMin = 0.001;
+balancingTime = 2000;
+balancingRelaxationTime = 1000;
