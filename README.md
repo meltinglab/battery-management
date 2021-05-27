@@ -26,12 +26,11 @@
 
   <p align="center">
     Matlab implementation of a Battery Management System.
-    It is meant to be runned on embedded devices.
     <br />
     <a href="https://github.com/meltinglab/battery-management/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/meltinglab/battery-management">View Demo</a>
+    <a href="https://github.com/meltinglab/battery-management/blob/master/images/simUI.png">View Demo UI</a>
     ·
     <a href="https://github.com/meltinglab/battery-management/issues">Report Bug</a>
     ·
@@ -70,11 +69,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-TODO: Write section
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
-
+The purpose of the project is to build from scratch a Battery Management System (BMS) by using a Model Based Design approach.
+Starting from the plant definition (customizable), we proceeded with the design of the control strategies both for the cell balancing as well as for the pre-charge, post-discharge resistors and contactors management.
+A complete [simulation enviroment](https://github.com/meltinglab/battery-management/blob/master/workspace/Simulation/simulationUI.slx) has been developed in order to test and appreciate all the functionalities.
 
 
 ### Built With
@@ -87,37 +85,54 @@ TODO: Write section
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get a local copy up and running just follow these simple steps:
 
 ### Prerequisites
 #### Software:
 
 * Matlab v2021a
-* Simulink v
-#### Add-on:
+* Simulink v10.3
 
-* Matlab Embedded Coder
-* TODO: add addons list
-#### Hardware:
+#### Toolbox:
+
+* optimization_toolbox
+* power_system_blocks
+* simscape
+* simulink_control_design
+* simulink_design_optim
+* stateflow
+
+N.B: In order to get the list of in-use toolbox in a project use the following command (after run) :
+   ```Matlab
+   license('inuse')
+   ```
+<!-- #### (OPTIONAL) Hardware:
 * STM32F4 Discovery 
+-->
 ### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/meltinglab/battery-management.git
    ```
-2. TODO: Add install steps
-
-
+2. Open the `simulationUI.slx` file under:
+   ```sh
+   ...\battery-management\workspace\Simulation\
+   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+In order to test the whole system (plant+controller), just follow these steps:
+1. Compile & Run by clicking on the "Play" button
+2. Adjust the control parameters and evaluate the behavoiur at run-time
 
-TODO: write section
+<p align="center">
+  <a href="https://github.com/meltinglab/battery-management">
+    <img src="images/simUI.png" alt="UI">
+  </a>
+</p>
 
-
-_For more examples, please refer to the [Documentation](https://github.com/meltinglab/battery-management/wiki)_
-
+_For more examples or a detailed description of all the blocks, please refer to the [Documentation](https://github.com/meltinglab/battery-management/wiki)_
 
 
 <!-- ROADMAP -->
