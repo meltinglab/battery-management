@@ -52,5 +52,5 @@ BusbarRes(4) = 0.05; %[Ohm]
 %% SOC parameters
 SOCInit = 0.95;
 Ts = 0.01;
-LUTBattery_Charge = [2.41,2.39,2.3];
+LUTBattery_Charge = [3.03,3.00,2.92];
 LUTBattery_Charge_Temp = [278.1499938964844,293.1499938964844,323.1499938964844];
