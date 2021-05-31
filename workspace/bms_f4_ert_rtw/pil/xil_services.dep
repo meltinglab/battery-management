@@ -54,6 +54,7 @@ xil_services.o: \
  C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_interface_common.h \
  C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_data_stream.h \
  C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/comms_interface.h \
+ C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/codeinstr_data_stream.h \
  C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/coder_assumptions_data_stream.h
 
 C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h:
@@ -163,5 +164,7 @@ C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_interface_common.h:
 C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_data_stream.h:
 
 C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/comms_interface.h:
+
+C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/codeinstr_data_stream.h:
 
 C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/coder_assumptions_data_stream.h:

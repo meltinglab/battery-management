@@ -1,8 +1,11 @@
+codeinstr_data_stream.o
+codeinstr_rtiostream.o
 coder_assumptions_app.o
 coder_assumptions_data_stream.o
 coder_assumptions_rtiostream.o
 misc.o
 pil_main_stm32f4xx.o
+profiler_timer.o
 rtiostream_serial_dma_stm32f4xx.o
 rtiostream_utils.o
 startup_stm32f4xx.o
@@ -13,6 +16,7 @@ stm32f4xx_usart.o
 syscalls_stm32f4xx.o
 system_stm32f4xx.o
 xil_data_stream.o
+xil_instrumentation.o
 xil_interface.o
 xil_interface_lib.o
 xil_rtiostream.o

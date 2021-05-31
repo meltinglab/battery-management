@@ -1,5 +1,5 @@
-../bms_f4.o
-../bms_f4_data.o
-../rtGetInf.o
-../rtGetNaN.o
-../rt_nonfinite.o
+../instrumented/bms_f4.o
+../instrumented/bms_f4_data.o
+../instrumented/rtGetInf.o
+../instrumented/rtGetNaN.o
+../instrumented/rt_nonfinite.o

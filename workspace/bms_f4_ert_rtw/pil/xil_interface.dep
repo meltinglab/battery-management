@@ -62,7 +62,10 @@ xil_interface.o: \
  C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/rtwtypes.h \
  C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_interface_lib.h \
  C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_error_codes.h \
- C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_data_stream.h
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/pil/xil_instrumentation.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/include/profiler_timer.h \
+ C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_data_stream.h \
+ C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/codeinstr_data_stream.h
 
 C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h:
 
@@ -188,4 +191,10 @@ C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_interface_lib.h:
 
 C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_error_codes.h:
 
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/pil/xil_instrumentation.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/include/profiler_timer.h:
+
 C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_data_stream.h:
+
+C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/codeinstr_data_stream.h:

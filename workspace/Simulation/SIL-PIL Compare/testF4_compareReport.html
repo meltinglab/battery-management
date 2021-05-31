@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* ----------- Global settings ----------- */
+
+        :root {
+            --whiteGray: rgba(250, 250, 250, 1);
+            --lightestGray: rgba(248, 248, 248, 1);
+            --lighterGray: rgba(242, 242, 242, 1);
+            --lightGray: rgba(218, 218, 218, 1);
+            --mediumGray: rgba(153, 153, 153, 1);
+            --darkGray: rgba(175, 175, 175, 1);
+            --darkerGray: rgba(102, 102, 102, 1);
+            --darkestGray: rgba(66, 66, 66, 1);
+            --diffColor: rgba(250, 230, 213, 1);
+            --resultGreen: rgba(0, 176, 91, 1);
+            --resultRed: rgba(255, 0, 0, 1);
+            --resultOrange: rgba(255, 115, 0, 1);
+        }
+
+        body {
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+            padding-right: 35px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--lightestGray);
+            border: 1px solid var(--lighterGray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--lightGray);
+            border-radius: 10px;
+            visibility: visible;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--darkestGray);
+            visibility: visible;
+        }
+
+        .unselectable {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* ----------- Container styles ----------- */
+
+        /* ----- Base ----- */
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ----- Header ----- */
+
+        .header {
+            border-style: solid;
+            border-color: var(--darkGray);
+            border-width: 1px 1px 2px 1px;
+            background-color: var(--lighterGray);
+
+            height: 50px;
+            display: flex;
+        }
+
+        /* ----- Header-left ----- */
+
+        .header-left {
+            flex: 2;
+
+            display: grid;
+
+            grid-template-areas:
+                "report-title report-title report-title report-title"
+                "report-author report-version report-date report-space";
+
+            grid-template-columns: auto auto auto 3fr;
+            grid-template-rows: 30px 17px;
+        }
+
+        .report-title {
+            font: bold 20px arial;
+            padding-left: 5px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            grid-area: report-title;
+        }
+
+        .report-author {
+            font: normal 14px/17px arial;
+            padding-left: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            grid-area: report-author;
+        }
+
+        .report-version {
+            font: normal 14px/17px arial;
+            padding-left: 15px;
+
+            grid-area: report-version;
+        }
+
+        .report-date {
+            font: normal 14px/17px arial;
+            padding-left: 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            grid-area: report-date;
+        }
+
+        .report-space {
+            font: normal 14px arial;
+
+            grid-area: report-space;
+        }
+
+        /* ----- Header-right ----- */
+
+        .header-right {
+            flex: 1;
+
+            display: flex;
+            min-width: 175px;
+        }
+
+        .report-style {
+            font: normal 14px arial;
+            flex: 1;
+
+            padding-right: 10px;
+            text-align: right;
+            align-self: center;
+        }
+
+        /* ----- Top level interactive ----- */
+
+        .interactive {
+            height: calc(100vh - 53px);
+            border-left: 1px solid var(--darkGray);
+            border-right: 1px solid var(--darkGray);
+            border-bottom: 1px solid var(--darkGray);
+            background-color: var(--lightestGray);
+            box-sizing: border-box;
+
+            display: grid;
+
+            grid-template-areas:
+                "signals vertical-sep visuals"
+                "horizontal-sep vertical-sep visuals"
+                "properties vertical-sep visuals";
+
+            grid-template-columns: 350px 2px auto;
+            grid-template-rows: 1fr 2px 1fr;
+        }
+
+        /* ----- Top level printable ----- */
+
+        .printable {
+            height: calc(100vh - 53px);
+            background-color: white;
+            box-sizing: border-box;
+
+            display: none;
+
+            grid-template-areas:
+                "summary"
+                "results";
+
+            grid-template-columns: 1fr;
+        }
+
+        /* ----- Signal-Property Combination ----- */
+
+        .summary {
+            break-after: page;
+            grid-area: summary;
+
+            display: grid;
+
+            grid-template-areas:
+                "summary-label"
+                "summary-data";
+        }
+
+        .summary-label {
+            font: bold 16px arial;
+            padding: 5px 0px 3px 5px;
+            background-color: white;
+
+            grid-area: summary-label;
+        }
+
+        .summary-data {
+            padding: 2px 0px 0px 5px;
+            background-color: white;
+
+            grid-area: summary-data;
+        }
+
+        .results {
+            break-before: page;
+            grid-area: results;
+            height: auto;
+            width: auto;
+        }
+
+        .results-row {
+            break-inside: avoid;
+            break-before: page;
+            padding: 2px 0px 0px 0px;
+            background-color: white;
+
+            grid-area: results-row;
+
+            height: auto;
+            width: auto;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .results-label {
+            font: bold 16px arial;
+            padding: 5px 0px 5px 5px;
+
+            grid-area: results-label;
+        }
+
+        .signals-n-properties {
+            padding-left: 10px;
+            min-height: 100px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-color: var(--mediumGray) transparent;
+            scrollbar-width: thin;
+
+            grid-area: signals-n-properties;
+        }
+
+        .print-visuals {
+            padding-left: 5px;
+            background-color: var(--whiteGray);
+
+            grid-area: print-visuals;
+        }
+
+        #print-cmpr-plot {
+            border: 1px solid var(--darkGray);
+            width: 100%;
+            height: 100%;
+            max-height: 500px;
+            object-fit: scale-down;
+        }
+
+        .print-sig-header {
+            padding: 2px 0px 0px 5px;
+            background-color: white;
+
+            grid-area: print-sig-header;
+        }
+
+        .print-sig-data {
+            break-after: page;
+            padding-left: 5px;
+
+            grid-area: print-sig-data;
+        }
+
+        .sig-prop-header {
+            background-color: white;
+
+            grid-area: sig-prop-header;
+        }
+
+        .sig-prop-data {
+            padding-left: 0px;
+
+            grid-area: sig-prop-data;
+        }
+
+        /* ----- Signals ----- */
+
+        .signals {
+            background-color: var(--lightestGray);
+
+            grid-area: signals;
+            display: grid;
+
+            grid-template-areas:
+                "sig-header sig-scroll"
+                "sig-data sig-scroll";
+
+            grid-template-columns: 1fr 5px;
+            grid-template-rows: 18px 1fr;
+        }
+
+        .sig-header {
+            padding: 2px 0px 0px 5px;
+            border-bottom: 1px solid var(--darkGray);
+            background-color: var(--lightestGray);
+
+            grid-area: sig-header;
+        }
+
+        .sig-data {
+            padding-left: 5px;
+            min-height: 100px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-color: var(--mediumGray) transparent;
+            scrollbar-width: thin;
+
+            grid-area: sig-data;
+        }
+
+        .sig-scroll {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 6px;
+            border-left: 1px solid var(--darkGray);
+
+            grid-area: sig-scroll;
+            display: none;
+        }
+
+        /* ----- Properties ----- */
+
+        .properties {
+            background-color: var(--lightestGray);
+            border-bottom: 1px solid var(--darkGray);
+
+            display: grid;
+
+            grid-template-areas:
+                "prop-title prop-title"
+                "prop-header prop-scroll"
+                "prop-data prop-scroll";
+
+            grid-template-columns: 1fr 5px;
+            grid-template-rows: 20px 18px 1fr;
+
+            grid-area: properties;
+        }
+
+        .prop-title {
+            padding: 0px 0px 0px 5px;
+            font: normal 13px/20px arial;
+            border-bottom: 1px solid var(--darkGray);
+
+            grid-area: prop-title;
+        }
+
+        .prop-header {
+            padding: 2px 0px 0px 5px;
+            border-bottom: 1px solid var(--darkGray);
+            background-color: var(--lightestGray);
+
+            grid-area: prop-header;
+        }
+
+        .prop-data {
+            padding-left: 5px;
+            max-height: calc(100% -39px);
+            min-height: 100px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-color: var(--mediumGray) var(--lightestGray);
+            scrollbar-width: thin;
+
+            grid-area: prop-data;
+        }
+
+        .prop-scroll {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 6px;
+            border-left: 1px solid var(--darkGray);
+
+            grid-area: prop-scroll;
+            display: none;
+        }
+
+        /* ----- Visuals ----- */
+
+        .visuals {
+            background-color: var(--whiteGray);
+            border-bottom: 1px solid var(--darkGray);
+
+            grid-area: visuals;
+        }
+
+        #cmpr-plot {
+            max-width: 100%;
+            max-height: 100%;
+
+            min-width: 300px;
+            min-height: 200px;
+
+            width: fit-content;
+            height: fit-content;
+
+            object-fit: contain;
+        }
+
+        /* ----- Separators ----- */
+
+        .horizontal-sep {
+            background-color: var(--darkGray);
+            cursor: ns-resize;
+
+            grid-area: horizontal-sep;
+        }
+
+        .horizontal-sep:hover {
+            background-color: var(--darkerGray);
+        }
+
+        .vertical-sep {
+            background-color: var(--darkGray);
+            cursor: ew-resize;
+
+            grid-area: vertical-sep;
+        }
+
+        .vertical-sep:hover {
+            background-color: var(--darkerGray);
+        }
+
+        /* ----- Printable table styles ----- */
+
+        .print-summary-hdr:not(:last-child) {
+            border-right: solid 1px var(--darkGray);
+        }
+
+        .print-summary-hdr:last-child {
+            border-right: solid 1px var(--darkGray);
+        }
+
+        .print-summary-hdr:first-child {
+            border-left: solid 1px var(--darkGray);
+        }
+
+        .print-summary-hdr {
+            border-top: 1px solid var(--darkGray);
+            color: var(--mediumGray);
+            font: normal 9px arial;
+            text-transform: uppercase;
+        }
+
+        .print-summary-bdy {
+            border-left: 1px solid var(--darkGray);
+        }
+
+        .print-summary-bdy:last-child {
+            border-right: solid 1px var(--darkGray);
+        }
+
+        .print-summary-bdy,
+        .print-summary-hdr {
+            width: 20%;
+        }
+
+        /* ----- Common table styles ----- */
+
+        .no-signals {
+            font: italic bold 14px/17px arial;
+            padding: 5px 0px 5px 10px;
+        }
+
+        .cmpr-tbl-common,
+        .prop-tbl-common {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .print-summary-common {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .header-data {
+            border-top: solid 1px var(--darkGray);
+            border-bottom: solid 1px var(--darkGray);
+        }
+
+        .bdy-data {
+            border-bottom: solid 1px var(--darkGray);
+        }
+
+        .formFilt {
+            align-self: right;
+        }
+
+        .cmpr-tbl-bdy-content {
+            border-bottom: solid 1px var(--lightGray);
+        }
+
+        .cmpr-status-common {
+            height: 14px;
+            width: 14px;
+            color: white;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            font: normal 11px/16px arial;
+        }
+
+        .cmpr-status-matched {
+            font: normal 11px/16px arial;
+            background-color: var(--resultGreen);
+        }
+
+        .cmpr-status-failed {
+            font: normal 11px/14px arial;
+            background-color: var(--resultRed);
+        }
+
+        .cmpr-status-unaligned {
+            font: bold 12px/12px arial;
+            background-color: var(--resultOrange);
+        }
+
+        .cmpr-cell-bdy,
+        .cmpr-cell-hdr {
+            width: 20%;
+        }
+
+        .common-cell-border:not(:last-child) {
+            border-right: solid 1px var(--lightGray);
+        }
+
+        .common-cell {
+            padding: 3px;
+            text-align: left;
+            max-width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .cmpr-cell-hdr,
+        .prop-cell-hdr-hrz,
+        .prop-cell-hdr-blnk {
+            color: var(--mediumGray);
+            font: normal 9px arial;
+            text-transform: uppercase;
+        }
+
+        .prop-cell-hdr-hrz {
+            padding: 3px;
+            width: 35%;
+            text-align: left;
+        }
+
+        .prop-cell-hdr-blnk {
+            padding: 3px;
+            width: 30%;
+        }
+
+        .sig-prop-cell-hdr-hrz,
+        .sig-prop-cell-hdr-blnk {
+            color: var(--mediumGray);
+            font: normal 9px arial;
+            text-transform: uppercase;
+            border-right: solid 1px var(--lightGray);
+            border-left: solid 1px var(--lightGray);
+        }
+
+        .sig-prop-cell-hdr-hrz {
+            padding: 3px;
+            width: 35%;
+            text-align: left;
+        }
+
+        .sig-prop-cell-hdr-blnk {
+            padding: 3px;
+            width: 30%;
+        }
+
+        .cmpr-row,
+        .prop-row {
+            font: normal 12px arial;
+        }
+
+        .cmpr-row-selected {
+            color: white;
+            font: normal 12px arial;
+            background-color: var(--darkerGray);
+        }
+
+        .prop-cell {
+            font: normal 12px arial;
+            color: var(--darkerGray);
+            width: 35%;
+            background-color: var(--whiteGray);
+        }
+
+        .prop-cell-diff {
+            font: normal 12px arial;
+            color: var(--darkerGray);
+            width: 35%;
+            background-color: var(--diffColor);
+        }
+
+        .prop-cell-hdr-vrt {
+            font: normal 12px arial;
+            color: var(--darkestGray);
+            width: 30%;
+            background-color: var(--whiteGray);
+        }
+
+        .prop-cell-hdr-vrt-diff {
+            font: bold 12px arial;
+            color: var(--darkestGray);
+            background-color: var(--whiteGray);
+        }
+
+        .sig-prop-cell {
+            font: normal 12px arial;
+            color: var(--darkerGray);
+            width: 35%;
+            background-color: white;
+            border-right: solid 1px var(--lightGray);
+        }
+
+        .sig-prop-cell-diff {
+            font: normal 12px arial;
+            color: var(--darkerGray);
+            width: 35%;
+            background-color: var(--diffColor);
+            border-right: solid 1px var(--lightGray);
+        }
+
+        .sig-prop-cell-hdr-vrt {
+            font: normal 12px arial;
+            color: var(--darkestGray);
+            width: 30%;
+            background-color: white;
+            border-left: solid 1px var(--lightGray);
+        }
+
+        .sig-prop-cell-hdr-vrt-diff {
+            font: bold 12px arial;
+            color: var(--darkestGray);
+            background-color: white;
+            border-left: solid 1px var(--lightGray);
+        }
+
+        .line-base,
+        .line-cmpr {
+            width: 100px;
+            border: 3px solid var(--lightestGray);
+        }
+
+        @media print {
+            .report-style {
+                display: none;
+            }
+
+            .interactive {
+                display: none !important;
+            }
+
+            .printable {
+                display: grid !important;
+            }
+
+            .print-blank {
+                break-after: page;
+            }
+
+            .print-visuals {
+                background-color: var(--lightestGray) !important;
+                padding-left: 0px !important;
+            }
+
+            .signals-n-properties {
+                padding-bottom: 25px !important;
+            }
+
+            .results-row {
+                display: flex !important;
+                flex-direction: column !important;
+                padding-bottom: 5px;
+            }
+
+            #print-cmpr-plot {
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                max-height: 650px !important;
+            }
+        }
+    </style>
+
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function getImage(imageSelect) {
+            const count = 0;
+            let data = null;
+            if (imageSelect <= count && count > 0) {
+                data = 'imageData' + String(imageSelect);
+            }
+            let obj = {
+                "Data": eval(data),
+                "Count": count
+            };
+            return obj;
+        }
+    </script>
+
+    <script type="text/javascript">
+        function getMetaData() {
+            let tab = 'New_Report.html';
+
+            let reportTitle = 'Compare: Run 1: testF4 (Simulation) vs. Run 2: testF4 (SIL/PIL)';
+
+            let reportAuthor = 'miche';
+
+            let reportDate = '31-May-2021 19:17:31';
+
+            let reportMLV = 'R2021a';
+
+            let comparisonLabel = 'Comparisons';
+
+            let propertiesLabel = 'Properties';
+
+            let baselineLabel = 'Baseline';
+
+            let compareToLabel = 'Compare To';
+
+            let summaryLabel = 'Summary';
+
+            let interactiveLabel = 'Interactive';
+
+            let printableLabel = 'Printable';
+
+            let rowsToReport = 'ReportOnlyMismatchedSignals';
+
+            let colsToReport = ['SignalName1', 'AbsTol', 'RelTol', 'MaxDifference', 'Result', 'LinkToPlot'];
+
+            let matched = 'Match';
+
+            let unmatched = 'Mismatch';
+
+            let unaligned = 'Unaligned';
+
+            let unprocessed = 'Unprocessed comparison';
+
+            let unknownStatus = 'Unknown comparison status';
+
+            let processingComparison = 'Comparison in progress';
+
+            let unitsMismatch = 'Mismatched units';
+
+            let emptyBaseline = 'Signal contains no data';
+
+            let propertyNames = ['Name', 'Description', 'Line', 'Override Global Tolerance',
+                'Absolute Tolerance', 'Relative Tolerance', 'Time Tolerance', 'Units', 'Data Type', 'Sample Time',
+                'Run', 'Align By', 'Model', 'Block Name', 'Block Path', 'Port', 'Dimensions', 'Channel', 
+                'Interp Method', 'Sync Method', 'Time Series Root', 'Time Source', 'Data Source'];
+
+            let propertyIds = ['Name', 'Description', 'Line', 'Override Global Tolerance',
+                'Absolute Tolerance', 'Relative Tolerance', 'Time Tolerance', 'Units', 'Data Type', 'Sample Time',
+                'Run', 'Align By', 'Model', 'Block Name', 'Block Path', 'Port', 'Dimensions', 'Channel', 
+                'Interp Method', 'Sync Method', 'Time Series Root', 'Time Source', 'Data Source'];
+
+            let propertyVars = ['SignalName', 'SignalDescription', 'LineColor', 'OverrideGlobalTol',
+                'AbsTol', 'RelTol', 'TimeTol', 'Units', 'SigDataType', 'SigSampleTime',
+                'Run', 'AlignBy', 'Model', 'BlockName', 'BlockPath', 'Port', 'Dimensions', 'Channel', 
+                'InterpMethod', 'SyncMethod', 'TimeSeriesRoot', 'TimeSource', 'DataSource'];
+
+            let combinedNames = [];
+            let combinedIds = [];
+            let combinedVars = [];
+
+            combinedNames = combinedNames.concat(propertyNames.slice(0, 1),
+                ['Result', 'Max Difference'], propertyNames.slice(2, propertyNames.length));
+
+            combinedIds = combinedIds.concat(propertyIds.slice(0, 1),
+                ['Result', 'Max Diff'], propertyIds.slice(2, propertyIds.length));
+
+            combinedVars = combinedVars.concat(propertyVars.slice(0, 1),
+                ['Result', 'MaxDifference'], propertyVars.slice(2, propertyVars.length));
+
+            let colHeaders = ['Name (Base)', 'Abs Tol', 'Rel Tol', 'Max Diff',
+                'Result', 'Name', 'Comp', 'Block Path (Base)', 'Block Path (Comp)',
+                'Data Src (Base)', 'Data Src (Comp)', 'Block Name (Base)',
+                'Block Name (Comp)', 'Description', 'Sync Method', 'Interp Method',
+                'Run (Base)', 'Run (Comp)', 'Align By', 'Channel (Base)', 'Channel (Comp)',
+                'Model (Base)', 'Model (Comp)', 'Dimensions (Base)', 'Dimensions (Comp)',
+                'Time Series Root (Base)', 'Time Series Root (Comp)', 'Time Source (Base)',
+                'Time Source (Comp)', 'Line Color (Base)', 'Line Color (Comp)',
+                'Line Dashed (Base)', 'Line Dashed (Comp)', 'Port (Base)', 'Port (Comp)',
+                'Units (Base)', 'Units (Comp)', 'Data Type (Base)', 'Data Type (Comp)',
+                'Sample Time (Base)', 'Sample Time (Comp)', 'Time Tol', 'Override Global Tol'];
+
+            let colNames = ['SignalName', 'AbsTol1', 'RelTol1', 'MaxDifference', 'Result',
+                'SignalName2', 'BlockPath1', 'BlockPath2', 'DataSource1', 'DataSource2',
+                'BlockName1', 'BlockName2', 'SignalDescription1', 'SyncMethod1',
+                'InterpMethod1', 'Run1', 'Run2', 'AlignBy1', 'Channel1', 'Channel2',
+                'Model1', 'Model2', 'Dimensions1', 'Dimensions2', 'TimeSeriesRoot1',
+                'TimeSeriesRoot2', 'TimeSource1', 'TimeSource2', 'LineColor1', 'LineColor2',
+                'LineDashed1', 'LineDashed2', 'Port1', 'Port2', 'Units1', 'Units2',
+                'SigDataType1', 'SigDataType2', 'SigSampleTime1', 'SigSampleTime2', 'TimeTol1',
+                'OverrideGlobalTol1'];
+
+            let obj = {
+                "TabTitle": tab,
+                "ReportTitle": reportTitle,
+                "ReportAuthor": reportAuthor,
+                "ReportDate": reportDate,
+                "ReportMatlabVersion": reportMLV,
+                "ComparisonLabel": comparisonLabel,
+                "PropertiesLabel": propertiesLabel,
+                "BaselineLabel": baselineLabel,
+                "CompareToLabel": compareToLabel,
+                "SummaryLabel": summaryLabel,
+                "InteractiveLabel": interactiveLabel,
+                "PrintableLabel": printableLabel,
+                "RowsToReport": rowsToReport,
+                "ColumnsToReport": colsToReport,
+                "ColumnHeaders": colHeaders,
+                "ColumnNames": colNames,
+                "PropertyNames": propertyNames,
+                "PropertyIds": propertyIds,
+                "PropertyVars": propertyVars,
+                "CombinedNames": combinedNames,
+                "CombinedIds": combinedIds,
+                "CombinedVars": combinedVars,
+                "MatchedTip": matched,
+                "UnmatchedTip": unmatched,
+                "UnalignedTip": unaligned,
+                "UnprocessedTip": unprocessed,
+                "UnknownStatusTip": unknownStatus,
+                "ProcessingComparisonTip": processingComparison,
+                "UnitsMismatchTip": unitsMismatch,
+                "EmptyBaselineTip": emptyBaseline
+            };
+            return obj;
+        }
+    </script>
+
+    <script type="text/javascript">
+        function getJSON() {
+            var dataJSON =
+                [                    {                        "Index": 0,                        "SignalName": "No mismatched signals",                        "Result": "",                        "BlockPath1": "",                        "BlockPath2": "",                        "DataSource1": "",                        "DataSource2": "",                        "SignalName1": "No mismatched signals",                        "SignalName2": "No mismatched signals",                        "SignalDescription1": "",                        "SignalDescription2": "",                        "AbsTol1": "",                        "AbsTol2": "",                        "RelTol1": "",                        "RelTol2": "",                        "SyncMethod1": "",                        "SyncMethod2": "",                        "InterpMethod1": "",                        "InterpMethod2": "",                        "Run1": "",                        "Run2": "",                        "Channel1": [],                        "Channel2": [],                        "Model1": "",                        "Model2": "",                        "BlockName1": "",                        "BlockName2": "",                        "Dimensions1": "",                        "Dimensions2": "",                        "TimeSeriesRoot1": "",                        "TimeSeriesRoot2": "",                        "TimeSource1": "",                        "TimeSource2": "",                        "LineColor1": [],                        "LineColor2": [],                        "LineDashed1": "",                        "LineDashed2": "",                        "Port1": "",                        "Port2": "",                        "AlignBy1": "",                        "AlignBy2": "",                        "Units1": "",                        "Units2": "",                        "SigDataType1": "",                        "SigDataType2": "",                        "SigSampleTime1": "",                        "SigSampleTime2": "",                        "MaxDifference": "",                        "TimeTol1": "",                        "TimeTol2": "",                        "OverrideGlobalTol1": false,                        "OverrideGlobalTol2": false                    }                ];
+            return dataJSON;
+        }
+    </script>
+
+    <script type="text/javascript">
+        let defaultSignal = 0;
+        let currentSignal = 0;
+        let isEastWestActive = false;
+        let isNorthSouthActive = false;
+        let interactLevel;
+        let printLevel;
+        let headerLevel;
+        let verticalSep;
+        let horizontalSep;
+        let countDrag = 0;
+        let interactLevelBorderWidth;
+        let signalsHeight;
+        let dragbarHeight;
+        let propHeight;
+        let signalsWidth;
+        let dragbarWidth;
+        let visualsWidth;
+        let isInitNS = true;
+
+        const metaData = getMetaData();
+        const propertyNames = metaData.PropertyNames;
+        const propertyIds = metaData.PropertyIds;
+        const propertyVars = metaData.PropertyVars;
+        const combinedNames = metaData.CombinedNames;
+        const combinedIds = metaData.CombinedIds;
+        const combinedVars = metaData.CombinedVars;
+        const localJSON = getJSON();
+
+        const compareFailStr =
+            '<span class="cmpr-status-common cmpr-status-failed" ' +
+            'title="' + metaData.UnmatchedTip + '">&#10006</span>';
+
+        const compareUnalignedStr =
+            '<span class="cmpr-status-common cmpr-status-unaligned" ' +
+            'title="' + metaData.UnalignedTip + '">&#8211</span>';
+
+        const comparePassStr =
+            '<span class="cmpr-status-common cmpr-status-matched" ' +
+            'title="' + metaData.MatchedTip + '">&#10004</span>';
+
+        if (isValidDataSet(localJSON)) {
+            window.addEventListener("resize", maintainPaneAspectRatios);
+        }
+
+        window.onload = () => {
+            headerLevel = document.getElementById("header");
+            interactLevel = document.getElementById("interactive");
+            printLevel = document.getElementById("printable");
+
+            myMain(localJSON);
+            initReportStyle();
+            if (isValidDataSet(localJSON)) {
+                horizontalSep = document.querySelector("#interactive .horizontal-sep");
+                verticalSep = document.querySelector("#interactive .vertical-sep");
+
+                interactLevelBorderWidth = (interactLevel.offsetHeight - interactLevel.clientHeight) / 2;
+
+                document.addEventListener("mouseup", endDrag);
+                interactLevel.addEventListener("mousemove", onDrag);
+                verticalSep.addEventListener("mousedown", eastWestSelect);
+                horizontalSep.addEventListener("mousedown", northSouthSelect);
+                document.addEventListener("keydown", function (event) {
+                    if ((event.key === "ArrowDown") || (event.key === "ArrowUp") ||
+                        (event.key === "End") || (event.key === "Home") ||
+                        (event.key === "PageDown") || (event.key === "PageUp") ||
+                        (event.key === " ")) {
+                        event.preventDefault();
+                    }
+                    if (!event.repeat) {
+                        switch (event.key) {
+                            case "ArrowDown":
+                                currentSignal = Math.min(currentSignal + 1, localJSON.length - 1);
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(false);
+                                break;
+                            case "ArrowUp":
+                                currentSignal = Math.max(currentSignal - 1, 0);
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(true);
+                                break;
+                            case "End":
+                                currentSignal = localJSON.length - 1;
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(false);
+                                break;
+                            case "Home":
+                                currentSignal = 0;
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(true);
+                                break;
+                            case "PageDown":
+                                currentSignal = Math.max(firstHidden(true), currentSignal);
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(true);
+                                break;
+                            case "PageUp":
+                                currentSignal = Math.min(firstHidden(false), currentSignal);
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(false);
+                                break;
+                            case " ":
+                                currentSignal = Math.min(currentSignal + 1, localJSON.length - 1);
+                                rowClickDisplay(currentSignal);
+                                moveIntoView(false);
+                        }
+                    }
+                });
+                setResultsPane();
+            }
+        };
+
+        function myMain(passedData) {
+            makeHeaderStructure();
+            setHeaderData();
+            if (isValidDataSet(passedData)) {
+                makeInteractiveStructure();
+                makePrintableStructure(passedData.length);
+                makeComparisonTable(passedData);
+                makePropertiesTable();
+                fillPropertiesTable(defaultSignal);
+                dispImage(defaultSignal, 'interactive', 'visuals', '', document);
+                highlightRow(defaultSignal);
+
+                fillSummary(passedData);
+                fillCombinedRow();
+            }
+            else {
+                noMismatchedSignals();
+            }
+        }
+
+        function moveIntoView(align) {
+            let elem = document.querySelector("#interactive .cmpr-row-selected");
+            let prnt = document.querySelector("#interactive .sig-data");
+            let elemRect = elem.getBoundingClientRect();
+            let prntRect = prnt.getBoundingClientRect();
+            if (elemRect.top < prntRect.top || elemRect.bottom > prntRect.bottom ||
+                elemRect.right > prntRect.right || elemRect.left < prntRect.left) {
+                elem.scrollIntoView(align);
+            }
+        }
+
+        function firstHidden(downDir) {
+            let listNodes = document.querySelectorAll("#interactive .cmpr-row, .cmpr-row-selected");
+            let elems = Array.prototype.slice.call(listNodes, 0);
+            let elemRect;
+            let prnt = document.querySelector("#interactive .sig-data");
+            let prntRect = prnt.getBoundingClientRect();
+            let hit = false;
+            let curIndex;
+            if (downDir) {
+                curIndex = elems.length - 1;
+                elems.forEach(function (elem, index) {
+                    elemRect = elem.getBoundingClientRect();
+                    if (!hit || false) {
+                        if (elemRect.bottom - 1 > prntRect.bottom) {
+                            hit = true;
+                            curIndex = index;
+                        }
+                    }
+                });
+            } else {
+                curIndex = null;
+                elems.reverse();
+                elems.forEach(function (elem, index) {
+                    elemRect = elem.getBoundingClientRect();
+                    if (!hit || false) {
+                        if (elemRect.top < prntRect.top) {
+                            hit = true;
+                            curIndex = elems.length - 1 - index;
+                        }
+                    }
+                });
+            }
+            return (curIndex);
+        }
+
+        function setHeaderData() {
+            document.title = metaData.TabTitle;
+            const reportTitle = document.querySelector('#header .report-title');
+            const reportAuthor = document.querySelector('#header .report-author');
+            const reportDate = document.querySelector('#header .report-date');
+            const reportMLV = document.querySelector('#header .report-version');
+
+            reportTitle.innerHTML = metaData.ReportTitle;
+            reportAuthor.innerHTML = metaData.ReportAuthor;
+            reportDate.innerHTML = metaData.ReportDate;
+            reportMLV.innerHTML = metaData.ReportMatlabVersion;
+        }
+
+        function makeTable(containerName, tableName, tableType, contentName) {
+            let container = document.createElement('div');
+            container.className = containerName;
+            let table = document.createElement('table');
+            table.className = tableName;
+            let content = document.createElement(tableType);
+            content.className = contentName;
+            container.appendChild(table);
+            table.appendChild(content);
+            return (container)
+        }
+
+        function makeDiv(className, idName) {
+            let container = document.createElement('div');
+            if (idName) {
+                container.id = idName;
+            }
+            container.className = className;
+            return (container)
+        }
+
+        function noMismatchedSignals() {
+            let noSigsInter = makeDiv('no-signals');
+            let noSigsPrint = makeDiv('no-signals');
+            interactLevel.appendChild(noSigsInter);
+            printLevel.appendChild(noSigsPrint);
+            let signalNameMessage = localJSON[0]["SignalName"];
+            noSigsInter.innerHTML = signalNameMessage;
+            noSigsPrint.innerHTML = signalNameMessage;
+        }
+
+        function makeInteractiveStructure() {
+            let sigContainer = makeDiv('signals');
+            let horizontalSep = makeDiv('horizontal-sep');
+            let propContainer = makeDiv('properties');
+            let verticalSep = makeDiv('vertical-sep');
+            let visContainer = makeDiv('visuals');
+            interactLevel.appendChild(sigContainer);
+            interactLevel.appendChild(horizontalSep);
+            interactLevel.appendChild(propContainer);
+            interactLevel.appendChild(verticalSep);
+            interactLevel.appendChild(visContainer);
+
+            let sigHderTbl = makeTable('sig-header', 'cmpr-tbl-common', 'thead', 'cmpr-tbl-hdr-content');
+            let sigBdyTbl = makeTable('sig-data', 'cmpr-tbl-common', 'tbody', 'cmpr-tbl-bdy-content');
+            let sigScroll = makeDiv('sig-scroll');
+            sigContainer.appendChild(sigHderTbl);
+            sigContainer.appendChild(sigBdyTbl);
+            sigContainer.appendChild(sigScroll);
+
+            let propTitle = makeDiv('prop-title unselectable');
+            let propHderTbl = makeTable('prop-header unselectable', 'prop-tbl-common', 'thead', 'prop-tbl-hdr-content');
+            let propBdyTbl = makeTable('prop-data unselectable', 'prop-tbl-common', 'tbody', 'prop-tbl-bdy-content');
+            let propScroll = makeDiv('prop-scroll');
+            propContainer.appendChild(propTitle);
+            propContainer.appendChild(propHderTbl);
+            propContainer.appendChild(propBdyTbl);
+            propContainer.appendChild(propScroll);
+        }
+
+        function makePrintableStructure(numRows) {
+            let summaryHdr = makeDiv('summary-label');
+            let summaryData = makeDiv('summary-data');
+            let summaryContainer = makeDiv('summary');
+            let resultsContainer = makeDiv('results');
+            summaryContainer.appendChild(summaryHdr);
+            summaryContainer.appendChild(summaryData);
+            printLevel.appendChild(summaryContainer);
+            printLevel.appendChild(resultsContainer);
+
+            let resultsHdr = makeDiv('results-label');
+            let resultsRow = makeDiv('results-row');
+            let combContainer = makeDiv('signals-n-properties');
+            let visContainer = makeDiv('print-visuals');
+            let sigSumHderTbl = makeTable('print-sig-header', 'print-summary-common header-data', 'thead', 'cmpr-tbl-hdr-content');
+            let sigSumBdyTbl = makeTable('print-sig-data', 'print-summary-common bdy-data', 'tbody', 'cmpr-tbl-bdy-content');
+            let sigSumBlank = makeDiv('print-blank');
+            let combHderTbl = makeTable('sig-prop-header unselectable', 'print-summary-common header-data', 'thead', 'prop-tbl-hdr-content');
+            let combBdyTbl = makeTable('sig-prop-data unselectable', 'print-summary-common bdy-data', 'tbody', 'prop-tbl-bdy-content');
+
+            summaryData.appendChild(sigSumHderTbl);
+            summaryData.appendChild(sigSumBdyTbl);
+            summaryData.appendChild(sigSumBlank);
+
+            for (let rowIndex = 1; rowIndex < numRows + 1; rowIndex++) {
+                if (rowIndex === 1) {
+                    resultsContainer.appendChild(resultsRow);
+                    resultsRow.appendChild(resultsHdr);
+                    resultsRow.appendChild(combContainer);
+                    resultsRow.appendChild(visContainer);
+
+                    combContainer.appendChild(combHderTbl);
+                    combContainer.appendChild(combBdyTbl);
+                } else {
+                    resultsContainer.appendChild(resultsRow.cloneNode(true));
+                    resultsRow.appendChild(resultsHdr);
+                    resultsRow.appendChild(combContainer);
+                    resultsRow.appendChild(visContainer);
+                    combContainer.appendChild(combHderTbl);
+                    combContainer.appendChild(combBdyTbl);
+                }
+            }
+        }
+
+        function makeHeaderStructure() {
+            let hdrLeft = makeDiv('header-left');
+            let hdrRight = makeDiv('header-right');
+            let hdrTitle = makeDiv('report-title unselectable');
+            let hdrAuthor = makeDiv('report-author unselectable');
+            let hdrVersion = makeDiv('report-version unselectable');
+            let hdrDate = makeDiv('report-date unselectable');
+            let hdrSpace = makeDiv('report-space unselectable');
+            let hdrStyle = makeDiv('report-style unselectable');
+            hdrLeft.appendChild(hdrTitle);
+            hdrLeft.appendChild(hdrAuthor);
+            hdrLeft.appendChild(hdrVersion);
+            hdrLeft.appendChild(hdrDate);
+            hdrLeft.appendChild(hdrSpace);
+            hdrRight.appendChild(hdrStyle);
+            headerLevel.appendChild(hdrLeft);
+            headerLevel.appendChild(hdrRight);
+        }
+
+        function makeComparisonTable(cmprData) {
+            const tableHead = document.querySelector('#interactive .cmpr-tbl-hdr-content');
+            const tableBody = document.querySelector('#interactive .cmpr-tbl-bdy-content');
+            const colHeaders = metaData.ColumnHeaders;
+            const colNames = metaData.ColumnNames;
+
+            let th, tr, td;
+            const colDispNum = 5;
+            tr = document.createElement('tr');
+            tr.setAttribute('class', 'rowComparisonsHead');
+            for (let colIndex = 0; colIndex < colDispNum; colIndex++) {
+                th = document.createElement('th');
+                th.setAttribute('class', 'cmpr-cell-hdr common-cell unselectable');
+                tr.appendChild(th);
+                th.innerHTML = colHeaders[colIndex];
+            }
+            tableHead.appendChild(tr);
+
+            const compareFailStr =
+                '<span class="cmpr-status-common cmpr-status-failed" ' +
+                'title="' + metaData.UnmatchedTip + '">&#10006</span>';
+
+            const compareUnalignedStr =
+                '<span class="cmpr-status-common cmpr-status-unaligned" ' +
+                'title="' + metaData.UnalignedTip + '">&#8211</span>';
+
+            const comparePassStr =
+                '<span class="cmpr-status-common cmpr-status-matched" ' +
+                'title="' + metaData.MatchedTip + '">&#10004</span>';
+
+            cmprData.forEach(function (row, index) {
+                tr = document.createElement('tr');
+                tr.setAttribute('class', 'cmpr-row');
+                if (isValidDataSet(cmprData)) {
+                    tr.addEventListener('click', rowClickDisplay.bind(tr, index));
+                }
+                for (let colIndex = 0; colIndex < colDispNum; colIndex++) {
+                    td = document.createElement('td');
+                    tr.appendChild(td);
+                    let name = colNames[colIndex];
+                    if (isValidDataSet(cmprData)) {
+                        switch (name) {
+                            case "MaxDifference":
+                                td.setAttribute('class', 'cmpr-cell-bdy common-cell common-cell-border unselectable');
+                                if (!row.hasOwnProperty(name) || row[name] === null) {
+                                    td.innerHTML = 'N/A';
+                                } else {
+                                    td.innerHTML = parseFloat(row[name]).toFixed(2);
+                                }
+                                break;
+                            case "Result":
+                                td.setAttribute('class', 'cmpr-cell-bdy common-cell common-cell-border unselectable');
+                                if (row[name] === "WithinTolerance") {
+                                    td.innerHTML = comparePassStr;
+                                } else if (row[name] === "Unaligned") {
+                                    td.innerHTML = compareUnalignedStr;
+                                } else {
+                                    td.innerHTML = compareFailStr;
+                                }
+                                break;
+                            case 'SignalName':
+                                td.setAttribute('class', 'cmpr-cell-bdy common-cell common-cell-border unselectable');
+                                td.textContent = row[name];
+                                break;
+                            default:
+                                td.setAttribute('class', 'cmpr-cell-bdy common-cell common-cell-border unselectable');
+                                td.innerHTML = row[name];
+                        }
+                    } else {
+                        td.setAttribute('class', 'cmpr-cell-bdy common-cell common-cell-border unselectable');
+                        td.innerHTML = row[name];
+                    }
+                }
+                tableBody.appendChild(tr);
+            });
+        }
+
+        function fillSummary(cmprData) {
+            const summaryHead = document.querySelector('#printable .summary-label');
+            const tableHead = document.querySelector('#printable .cmpr-tbl-hdr-content');
+            const tableBody = document.querySelector('#printable .cmpr-tbl-bdy-content');
+            const colHeaders = metaData.ColumnHeaders;
+            const colNames = metaData.ColumnNames;
+
+            summaryHead.innerHTML = metaData.SummaryLabel;
+
+            let th, tr, td;
+            const colDispNum = 5;
+            tr = document.createElement('tr');
+            tr.setAttribute('class', 'rowComparisonsHead');
+            for (let colIndex = 0; colIndex < colDispNum; colIndex++) {
+                th = document.createElement('th');
+                th.setAttribute('class', 'print-summary-hdr common-cell unselectable');
+                tr.appendChild(th);
+                th.innerHTML = colHeaders[colIndex];
+            }
+            tableHead.appendChild(tr);
+
+            cmprData.forEach(function (row, index) {
+                tr = document.createElement('tr');
+                tr.setAttribute('class', 'cmpr-row');
+                if (isValidDataSet(cmprData)) {
+                    tr.addEventListener('click', rowClickDisplay.bind(tr, index));
+                }
+                for (let colIndex = 0; colIndex < colDispNum; colIndex++) {
+                    td = document.createElement('td');
+                    tr.appendChild(td);
+                    let name = colNames[colIndex];
+                    if (isValidDataSet(cmprData)) {
+                        switch (name) {
+                            case "MaxDifference":
+                                td.setAttribute('class', 'print-summary-bdy common-cell unselectable');
+                                td.innerHTML = parseFloat(row[name]).toFixed(2);
+                                break;
+                            case "Result":
+                                td.setAttribute('class', 'print-summary-bdy common-cell unselectable');
+                                if (row[name] === "WithinTolerance") {
+                                    td.innerHTML = comparePassStr;
+                                } else if (row[name] === "Unaligned") {
+                                    td.innerHTML = compareUnalignedStr;
+                                } else {
+                                    td.innerHTML = compareFailStr;
+                                }
+                                break;
+                            case 'SignalName':
+                                td.setAttribute('class', 'print-summary-bdy common-cell unselectable');
+                                td.textContent = row[name];
+                                break;
+                            default:
+                                td.setAttribute('class', 'print-summary-bdy common-cell unselectable');
+                                td.innerHTML = row[name];
+                        }
+                    } else {
+                        td.setAttribute('class', 'print-summary-bdy common-cell unselectable');
+                        td.innerHTML = row[name];
+                    }
+                }
+                tableBody.appendChild(tr);
+            });
+        }
+
+        function rowClickDisplay(signalInd) {
+            currentSignal = signalInd;
+            dispImage(signalInd, 'interactive', 'visuals', '', document);
+            fillPropertiesTable(signalInd);
+            highlightRow(signalInd);
+        }
+
+        function highlightRow(signalInd) {
+            const tableBody = document.querySelector('#interactive .cmpr-tbl-bdy-content');
+            let curRow = tableBody.rows[signalInd];
+            let prevRow = tableBody.rows[defaultSignal];
+            curRow.setAttribute('class', 'cmpr-row-selected');
+            if (prevRow !== curRow) {
+                prevRow.setAttribute('class', 'cmpr-row');
+                defaultSignal = signalInd;
+            }
+        }
+
+        function makePropertiesTable() {
+            const tableTitle = document.querySelector('#interactive .prop-title');
+            const tableBody = document.querySelector('#interactive .prop-tbl-bdy-content');
+            const tableHead = document.querySelector('#interactive .prop-tbl-hdr-content');
+            const colHeaders = ['', metaData.BaselineLabel, metaData.CompareToLabel];
+
+            let tr = document.createElement('tr');
+            tr.className = 'prop-row';
+
+            let th0 = document.createElement('th');
+            th0.className = 'prop-cell-hdr-blnk';
+            tr.appendChild(th0);
+            th0.innerHTML = colHeaders[0];
+
+            let th1 = document.createElement('th');
+            th1.className = 'prop-cell-hdr-hrz';
+            tr.appendChild(th1);
+            th1.innerHTML = colHeaders[1];
+
+            let th2 = document.createElement('th');
+            th2.className = 'prop-cell-hdr-hrz';
+            tr.appendChild(th2);
+            th2.innerHTML = colHeaders[2];
+
+            tableTitle.innerHTML = metaData.PropertiesLabel;
+            tableHead.appendChild(tr);
+
+            let numCols = 3;
+            for (let rowIndex = 0; rowIndex < propertyNames.length; rowIndex++) {
+                tr = document.createElement('tr');
+                for (let colIndex = 0; colIndex < numCols; colIndex++) {
+                    let td = document.createElement('td');
+                    tr.appendChild(td);
+                    if (colIndex === 0) {
+                        td.innerHTML = propertyNames[rowIndex];
+                        td.id = propertyIds[rowIndex];
+                        td.setAttribute('class', 'prop-cell-hdr-vrt common-cell common-cell-border');
+                    } else {
+                        td.setAttribute('class', 'prop-cell common-cell common-cell-border');
+                        let cellIdStr = propertyVars[rowIndex] + colIndex;
+                        if (cellIdStr === "LineColor1") {
+                            let strVal = '<div class="line-base"><\div>';
+                            td.innerHTML = strVal;
+                        } else if (cellIdStr === "LineColor2") {
+                            let strVal = '<div class="line-cmpr"><\div>';
+                            td.innerHTML = strVal;
+                        } else {
+                            td.innerHTML = '';
+                        }
+                    }
+                }
+                tr.setAttribute('class', 'divTableRow');
+                tableBody.appendChild(tr);
+            }
+        }
+
+        function makeCombinedTable(doc) {
+            // const tableTitle = document.querySelector('#printable .prop-title');
+            const tableBody = doc.querySelector('.prop-tbl-bdy-content');
+            const tableHead = doc.querySelector('.prop-tbl-hdr-content');
+            const colHeaders = ['', metaData.BaselineLabel, metaData.CompareToLabel];
+
+            let tr = document.createElement('tr');
+            tr.className = 'prop-row';
+
+            let th0 = document.createElement('th');
+            th0.className = 'sig-prop-cell-hdr-blnk';
+            tr.appendChild(th0);
+            th0.innerHTML = colHeaders[0];
+
+            let th1 = document.createElement('th');
+            th1.className = 'sig-prop-cell-hdr-hrz';
+            tr.appendChild(th1);
+            th1.innerHTML = colHeaders[1];
+
+            let th2 = document.createElement('th');
+            th2.className = 'sig-prop-cell-hdr-hrz';
+            tr.appendChild(th2);
+            th2.innerHTML = colHeaders[2];
+
+            tableHead.appendChild(tr);
+            let numCols = 3;
+            for (let rowIndex = 0; rowIndex < combinedNames.length; rowIndex++) {
+                tr = document.createElement('tr');
+                for (let colIndex = 0; colIndex < numCols; colIndex++) {
+                    let td = document.createElement('td');
+                    tr.appendChild(td);
+                    if (colIndex === 0) {
+                        td.innerHTML = combinedNames[rowIndex];
+                        td.id = combinedIds[rowIndex];
+                        td.setAttribute('class', 'sig-prop-cell-hdr-vrt common-cell common-cell-border');
+                    } else {
+                        td.setAttribute('class', 'sig-prop-cell common-cell common-cell-border');
+                        let cellIdStr = combinedVars[rowIndex] + colIndex;
+                        if (cellIdStr === "LineColor1") {
+                            let strVal = '<div class="line-base"><\div>';
+                            td.innerHTML = strVal;
+                        } else if (cellIdStr === "LineColor2") {
+                            let strVal = '<div class="line-cmpr"><\div>';
+                            td.innerHTML = strVal;
+                        } else {
+                            td.innerHTML = '';
+                        }
+                    }
+                }
+                tr.setAttribute('class', 'divTableRow');
+                tableBody.appendChild(tr);
+            }
+        }
+
+        function fillPropertiesTable(signalInd) {
+            const colNames = metaData.ColumnNames;
+            for (let rowIndex = 0; rowIndex < propertyVars.length; rowIndex++) {
+                let rowIndexOffset = rowIndex + 1;
+                let cellIdStr = propertyVars[rowIndex];
+                let myCell = document.querySelectorAll("#interactive .properties tbody tr:nth-child(" + rowIndexOffset + ") td[class^='prop-cell']");
+                let myRow = document.querySelectorAll("#interactive .properties tbody tr:nth-child(" + rowIndexOffset + ")");
+                const cellIdStr1 = cellIdStr + 1;
+                const cellIdStr2 = cellIdStr + 2;
+                const cellData1 = localJSON[signalInd][cellIdStr1];
+                const cellData2 = localJSON[signalInd][cellIdStr2];
+
+                switch (myCell[0].id) {
+                    case 'Name':
+                        myCell[1].textContent = cellData1;
+                        myCell[2].textContent = cellData2;
+                        if (cellData1 === cellData2) {
+                            myCell[0].className = 'prop-cell-hdr-vrt common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell common-cell common-cell-border';
+                        } else {
+                            myCell[0].className = 'prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell-diff common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell-diff common-cell common-cell-border';
+                        }
+                        break;
+                    case "Line":
+                        const rgbPct1 = "rgb(" +
+                            ((cellData1[0] * 100).toFixed(2)) + '%, ' +
+                            ((cellData1[1] * 100).toFixed(2)) + '%, ' +
+                            ((cellData1[2] * 100).toFixed(2)) + '%)';
+                        const lineStyle1 = getLineStyle(localJSON[signalInd].LineDashed1);
+                        document.getElementsByClassName("line-base")[0].style =
+                            'border-color: ' + rgbPct1 + ';' + 'border-style: ' + lineStyle1 + ';';
+                        const rgbPct2 = "rgb(" +
+                            ((cellData2[0] * 100).toFixed(2)) + '%, ' +
+                            ((cellData2[1] * 100).toFixed(2)) + '%, ' +
+                            ((cellData2[2] * 100).toFixed(2)) + '%)';
+                        const lineStyle2 = getLineStyle(localJSON[signalInd].LineDashed2);
+                        document.getElementsByClassName("line-cmpr")[0].style =
+                            'border-color: ' + rgbPct2 + ';' + 'border-style: ' + lineStyle2 + ';';
+                        break;
+                    case "Channel":
+                        myCell[1].innerHTML = cellData1;
+                        myCell[2].innerHTML = cellData2;
+                        if (arrayCompare(cellData1, cellData2)) {
+                            myCell[0].className = 'prop-cell-hdr-vrt common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell common-cell common-cell-border';
+                        } else {
+                            myCell[0].className = 'prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell-diff common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell-diff common-cell common-cell-border';
+                        }
+                        break;
+                    default:
+                        myCell[1].innerHTML = cellData1;
+                        myCell[2].innerHTML = cellData2;
+                        if (cellData1 === cellData2) {
+                            myCell[0].className = 'prop-cell-hdr-vrt common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell common-cell common-cell-border';
+                        } else {
+                            myCell[0].className = 'prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                            myCell[1].className = 'prop-cell-diff common-cell common-cell-border';
+                            myCell[2].className = 'prop-cell-diff common-cell common-cell-border';
+                        }
+                }
+                if (myCell[0].id !== "Name" && myCell[0].id !== "Block Path") {
+                    myRow[0].style.display = localJSON[signalInd].Result === "Unaligned" ? 'none' : '';
+                }
+            }
+        }
+
+        function fillCombinedRow() {
+            let resultsRows = document.querySelectorAll("#printable .results-row");
+            for (let rowIndex = 0; rowIndex < resultsRows.length; rowIndex++) {
+                let resultsRow = resultsRows[rowIndex];
+                makeCombinedTable(resultsRow);
+                fillCombinedTable(rowIndex, resultsRow);
+                dispImage(rowIndex, 'printable', 'print-visuals', 'print-', resultsRow);
+            }
+        }
+
+        function fillCombinedTable(signalInd, doc) {
+            const resultsHead = doc.querySelector('#printable .results-label');
+            if (signalInd < localJSON.length) {
+                for (let rowIndex = 0; rowIndex < combinedVars.length; rowIndex++) {
+                    let rowIndexOffset = rowIndex + 1;
+                    let cellIdStr = combinedVars[rowIndex];
+                    let myCell = doc.querySelectorAll("tbody tr:nth-child(" + rowIndexOffset + ") td[class^='sig-prop-cell']");
+                    let myRow = doc.querySelectorAll("tbody tr:nth-child(" + rowIndexOffset + ")");
+                    let cellIdStr1 = cellIdStr + 1;
+                    let cellIdStr2 = cellIdStr + 2;
+                    let cellData1 = localJSON[signalInd][cellIdStr1];
+                    let cellData2 = localJSON[signalInd][cellIdStr2];
+
+                    resultsHead.innerHTML = localJSON[signalInd]["SignalName1"];
+                    switch (myCell[0].id) {
+                        case 'Name':
+                            myCell[1].textContent = cellData1;
+                            myCell[2].textContent = cellData2;
+                            if (cellData1 === cellData2) {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell common-cell common-cell-border';
+                            } else {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                            }
+                            break;
+                        case "Line":
+                            const rgbPct1 = "rgb(" +
+                                ((cellData1[0] * 100).toFixed(2)) + '%, ' +
+                                ((cellData1[1] * 100).toFixed(2)) + '%, ' +
+                                ((cellData1[2] * 100).toFixed(2)) + '%)';
+                            const lineStyle1 = getLineStyle(localJSON[signalInd].LineDashed1);
+                            doc.getElementsByClassName("line-base")[0].style =
+                                'border-color: ' + rgbPct1 + ';' + 'border-style: ' + lineStyle1 + ';';
+                            const rgbPct2 = "rgb(" +
+                                ((cellData2[0] * 100).toFixed(2)) + '%, ' +
+                                ((cellData2[1] * 100).toFixed(2)) + '%, ' +
+                                ((cellData2[2] * 100).toFixed(2)) + '%)';
+                            const lineStyle2 = getLineStyle(localJSON[signalInd].LineDashed2);
+                            doc.getElementsByClassName("line-cmpr")[0].style =
+                                'border-color: ' + rgbPct2 + ';' + 'border-style: ' + lineStyle2 + ';';
+                            break;
+                        case "Channel":
+                            myCell[1].innerHTML = cellData1;
+                            myCell[2].innerHTML = cellData2;
+                            if (arrayCompare(cellData1, cellData2)) {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell common-cell common-cell-border';
+                            } else {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                            }
+                            break;
+                        case "Max Diff":
+                            cellData1 = localJSON[signalInd][cellIdStr];
+                            if (cellData1 === undefined || cellData1 === null) {
+                                myCell[1].innerHTML = 'N/A';
+                            } else {
+                                myCell[1].innerHTML = cellData1.toFixed(3);
+                            }
+                            myCell[2].innerHTML = "--";
+                            myCell[0].className = 'sig-prop-cell-hdr-vrt common-cell common-cell-border';
+                            myCell[1].className = 'sig-prop-cell common-cell common-cell-border';
+                            myCell[2].className = 'sig-prop-cell common-cell common-cell-border';
+                            break;
+                        case "Result":
+                            cellData1 = localJSON[signalInd][cellIdStr];
+                            if (cellData1 === "WithinTolerance") {
+                                myCell[1].innerHTML = comparePassStr;
+                            } else if (cellData1 === "Unaligned") {
+                                myCell[1].innerHTML = compareUnalignedStr;
+                            } else {
+                                myCell[1].innerHTML = compareFailStr;
+                            }
+                            myCell[2].innerHTML = "--";
+                            myCell[0].className = 'sig-prop-cell-hdr-vrt common-cell common-cell-border';
+                            myCell[1].className = 'sig-prop-cell common-cell common-cell-border';
+                            myCell[2].className = 'sig-prop-cell common-cell common-cell-border';
+                            break;
+                        default:
+                            myCell[1].innerHTML = cellData1;
+                            myCell[2].innerHTML = cellData2;
+                            if (cellData1 === cellData2) {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell common-cell common-cell-border';
+                            } else {
+                                myCell[0].className = 'sig-prop-cell-hdr-vrt-diff common-cell common-cell-border';
+                                myCell[1].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                                myCell[2].className = 'sig-prop-cell-diff common-cell common-cell-border';
+                            }
+                    }
+                    if (myCell[0].id !== "Name" && myCell[0].id !== "Block Path" &&
+                        myCell[0].id !== "Result" && myCell[0].id !== "Max Diff") {
+                        myRow[0].style.display = localJSON[signalInd].Result === "Unaligned" ? 'none' : '';
+                    }
+                }
+            }
+        }
+
+        function dispImage(imgVal, viewCntnr, trgtCntnr, pref, doc) {
+            const imageBody = doc.querySelector('#' + viewCntnr + ' .' + trgtCntnr);
+            const image = new Image();
+            const imgSelect = getImage(imgVal + 1);
+            if (imgVal < imgSelect.Count) {
+                image.src = imgSelect.Data;
+                image.id = pref + 'cmpr-plot';
+                image.draggable = false;
+                while (imageBody.firstChild) {
+                    imageBody.removeChild(imageBody.firstChild);
+                }
+                imageBody.appendChild(image);
+            }
+        }
+
+        function isValidDataSet(cmprData) {
+            let validFlag = cmprData[0].Index !== 0;
+            return validFlag;
+        }
+
+        function getLineStyle(lineSymbol) {
+            switch (lineSymbol) {
+                case '-':
+                    return 'solid';
+                case '--':
+                    return 'dashed';
+                case ':':
+                    return 'dotted';
+                case '-.':
+                    return 'dashed';
+                default:
+                    return 'solid';
+            }
+        }
+
+        function arrayCompare(arrayOne, arrayTwo) {
+            if (arrayOne.length !== arrayTwo.length) {
+                return false;
+            }
+            for (var i in arrayOne) {
+                if (arrayOne[i] instanceof Array && arrayTwo[i] instanceof Array) {
+                    if (!arrayCompare(arrayOne[i], arrayTwo[i])) {
+                        return false;
+                    }
+                }
+                else if (arrayOne[i] !== arrayTwo[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function initReportStyle() {
+            let reportStyle = document.querySelector("#header .report-style");
+            let interactChoice = document.createElement("INPUT");
+            let printChoice = document.createElement("INPUT");
+
+            interactChoice.setAttribute("type", "radio");
+            interactChoice.setAttribute("name", "styleChoice");
+            interactChoice.setAttribute("value", "interactStyle");
+            interactChoice.setAttribute("checked", "checked");
+            interactChoice.setAttribute("onclick", "interactLevel.style.display = 'grid'; printLevel.style.display = 'none';");
+
+            printChoice.setAttribute("type", "radio");
+            printChoice.setAttribute("name", "styleChoice");
+            printChoice.setAttribute("value", "printStyle");
+            printChoice.setAttribute("onclick", "interactLevel.style.display = 'none'; printLevel.style.display = 'grid';");
+
+            reportStyle.appendChild(interactChoice);
+            reportStyle.innerHTML += metaData.InteractiveLabel;
+            reportStyle.appendChild(printChoice);
+            reportStyle.innerHTML += metaData.PrintableLabel;
+        }
+
+        // ------- Window resizing functions -------
+
+        function maintainPaneAspectRatios() {
+            setResultsPane();
+        }
+
+        function setCursor(cursor) {
+            interactLevel.style.cursor = cursor;
+        }
+
+        function eastWestSelect() {
+            isEastWestActive = true;
+            setCursor("ew-resize");
+            countDrag = 0;
+        }
+
+        function northSouthSelect() {
+            isNorthSouthActive = true;
+            setCursor("ns-resize");
+            countDrag = 0;
+        }
+
+        function endDrag() {
+            isEastWestActive = false;
+            isNorthSouthActive = false;
+            setCursor("auto");
+            countDrag = 0;
+        }
+
+        function onDrag() {
+            let nsStepRes = 3;
+            let ewStepRes = 3;
+            if (isNorthSouthActive) {
+                countDrag += 1;
+                if (countDrag % nsStepRes === 0) {
+                    setResultsPane();
+                }
+            }
+
+            if (isEastWestActive) {
+                countDrag += 1;
+                if (countDrag % ewStepRes === 0) {
+                    setInteractivePane();
+                }
+            }
+        }
+
+        function calcResultsPane() {
+            let headerHeight = headerLevel.offsetHeight;
+            dragbarHeight = horizontalSep.offsetHeight;
+
+            if (isNorthSouthActive || isInitNS) {
+                if (isInitNS) {
+                    let initSigRatio = .4;
+                    signalsHeight = (interactLevel.clientHeight - dragbarHeight) * initSigRatio;
+                } else {
+                    signalsHeight = event.clientY - headerHeight - interactLevelBorderWidth - dragbarHeight / 2;
+                }
+
+                // TODO update to remove hardcoded values based on minimum data div heights
+                let limitSigHeight = 117.5;
+                if (signalsHeight <= limitSigHeight) {
+                    signalsHeight = limitSigHeight;
+                }
+                propHeight = interactLevel.clientHeight - dragbarHeight - signalsHeight;
+                let limitPropHeight = 137.5;
+                if (propHeight <= limitPropHeight) {
+                    propHeight = limitPropHeight;
+                    if (signalsHeight >= (interactLevel.clientHeight - dragbarHeight - propHeight)) {
+                        signalsHeight = interactLevel.clientHeight - dragbarHeight - propHeight;
+                    }
+                }
+                isInitNS = 0;
+            } else if (typeof signalsHeight === 'undefined') {
+                let elemHsep = horizontalSep.getBoundingClientRect();
+                signalsHeight = elemHsep.top + 0.5 - headerHeight - interactLevelBorderWidth - dragbarHeight / 2;
+
+                // TODO update to remove hardcoded values based on minimum data div heights
+                let limitSigHeight = 117.5;
+                if (signalsHeight <= limitSigHeight) {
+                    signalsHeight = limitSigHeight;
+                }
+
+                propHeight = interactLevel.clientHeight - dragbarHeight - signalsHeight;
+                let limitPropHeight = 137.5;  // TODO Tune
+                if ((propHeight - limitPropHeight) <= 0) {
+                    propHeight = limitPropHeight;
+                }
+            }
+        }
+
+        function setResultsPane() {
+            calcResultsPane();
+
+            let sigData = document.querySelector("#interactive .sig-data");
+            let propData = document.querySelector("#interactive .prop-data");
+
+            let rows = [
+                signalsHeight,
+                dragbarHeight,
+                propHeight
+            ];
+
+            let newRows;
+            if ((rows[0] / rows[2]) >= 1) {
+                newRows = [
+                    (rows[0] / rows[2]).toString() + "fr",
+                    rows[1].toString() + "px",
+                    "1fr"
+                ];
+            } else {
+                newRows = [
+                    "1fr",
+                    rows[1].toString() + "px",
+                    (rows[2] / rows[0]).toString() + "fr"
+                ];
+            }
+
+            interactLevel.style.gridTemplateRows = newRows.join(" ");
+            event.preventDefault();
+
+            // TODO update to remove hardcoded values
+            let sigDataHeightNum;
+            let propDataHeightNum;
+            if (isNorthSouthActive) {
+                sigDataHeightNum = signalsHeight - 19; // header height
+                propDataHeightNum = propHeight - 39;   // header + title heights
+            } else {
+                sigDataHeightNum = (signalsHeight / (signalsHeight + propHeight)) * interactLevel.offsetHeight - 1 - 19;
+                propDataHeightNum = (propHeight / (signalsHeight + propHeight)) * interactLevel.offsetHeight - 1 - 39;
+            }
+            sigData.style.height = sigDataHeightNum.toString() + "px";
+            propData.style.height = propDataHeightNum.toString() + "px";
+        }
+
+        function calcInteractivePane() {
+            dragbarWidth = verticalSep.offsetWidth;
+            signalsWidth = event.clientX - interactLevelBorderWidth - dragbarWidth / 2;
+            visualsWidth = interactLevel.clientWidth - dragbarWidth - signalsWidth;
+        }
+
+        function setInteractivePane() {
+            calcInteractivePane();
+
+            let cols = [
+                signalsWidth,
+                dragbarWidth,
+                visualsWidth
+            ];
+
+            let newCols = [
+                (cols[0] / cols[2]).toString() + "fr",
+                cols[1] + "px",
+                "1fr"
+            ];
+
+            interactLevel.style.gridTemplateColumns = newCols.join(" ");
+            event.preventDefault();
+        }
+    </script>
+
+    <div id="header" class="header"></div>
+    <div id="interactive" class="interactive" draggable="false"></div>
+    <div id="printable" class="printable" draggable="false"></div>
+</body>
+
+</html>

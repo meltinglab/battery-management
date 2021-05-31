@@ -1,0 +1,15 @@
+-IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace
+-IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw
+-IC:/Program\ Files/MATLAB/R2021a/extern/include
+-IC:/Program\ Files/MATLAB/R2021a/simulink/include
+-IC:/Program\ Files/MATLAB/R2021a/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2021a/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2021a/rtw/c/ert
+-IC:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/scheduler/include
+-IC:/Program\ Files/MATLAB/R2021a/rtw/c/src/ext_mode/serial
+-IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include
+-IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Project/Peripheral_Examples/SysTick
+-IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc
+-IC:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include
+-IC:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/cmsis_rtos_rtx/include

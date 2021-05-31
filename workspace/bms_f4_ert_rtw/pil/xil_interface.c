@@ -8,6 +8,7 @@
 #include "bms_f4.h"
 #include "bms_f4_private.h"
 #include "xil_interface.h"
+#include "xil_instrumentation.h"
 
 /* Functions with a C call interface */
 #ifdef __cplusplus
@@ -17,6 +18,7 @@ extern "C" {
 #endif
 
 #include "xil_data_stream.h"
+#include "codeinstr_data_stream.h"
 #ifdef __cplusplus
 
 }
@@ -36,6 +38,26 @@ XIL_INTERFACE_ERROR_CODE xilProcessParams(uint32_T xilFcnId)
   }
 
   return XIL_INTERFACE_SUCCESS;
+}
+
+void xilUploadCodeInstrData(void * pData, uint32_T numMemUnits, uint32_T
+  sectionId)
+{
+  /* Send code instrumentation data to host */
+  if (codeInstrWriteData((MemUnit_T *) &numMemUnits, sizeof(numMemUnits)) !=
+      XIL_DATA_STREAM_SUCCESS) {
+    for (;;) ;
+  }
+
+  if (codeInstrWriteData((MemUnit_T *) &sectionId, sizeof(uint32_T)) !=
+      XIL_DATA_STREAM_SUCCESS) {
+    for (;;) ;
+  }
+
+  if (codeInstrWriteData((MemUnit_T *) pData, numMemUnits) !=
+      XIL_DATA_STREAM_SUCCESS) {
+    for (;;) ;
+  }
 }
 
 XIL_INTERFACE_ERROR_CODE xilGetDataTypeInfo(void)
@@ -86,7 +108,9 @@ XIL_INTERFACE_ERROR_CODE xilInitialize(uint32_T xilFcnId)
   /* initialize output storage owned by In-the-Loop */
   /* Single In-the-Loop Component */
   if (xilFcnId == 0) {
+    taskTimeStart_bms_f4(1U);
     bms_f4_initialize();
+    taskTimeEnd_bms_f4(1U);
   } else {
     errorCode = XIL_INTERFACE_UNKNOWN_FCNID;
   }
@@ -98,7 +122,7 @@ XIL_INTERFACE_ERROR_CODE xilPause(uint32_T xilFcnId)
 {
   XIL_INTERFACE_ERROR_CODE errorCode = XIL_INTERFACE_SUCCESS;
   if (xilFcnId == 0) {
-    /* Nothing to do */
+    PauseEvent();
   } else {
     errorCode = XIL_INTERFACE_UNKNOWN_FCNID;
   }                                    /* if */
@@ -434,13 +458,16 @@ XIL_INTERFACE_ERROR_CODE xilOutput(uint32_T xilFcnId, uint32_T xilTID)
 
   switch (xilTID) {
    case 1:
+    taskTimeStart_bms_f4(2U);
     bms_f4_step();
+    taskTimeEnd_bms_f4(2U);
     break;
 
    default:
     return XIL_INTERFACE_UNKNOWN_TID;
   }
 
+  StepCompletedEvent();
   return XIL_INTERFACE_SUCCESS;
 }
 
@@ -784,7 +811,10 @@ XIL_INTERFACE_ERROR_CODE xilTerminate(uint32_T xilFcnId)
   }                                    /* if */
 
   /* Invoke any terminate Function */
+  taskTimeStart_bms_f4(3U);
   bms_f4_terminate();
+  taskTimeEnd_bms_f4(3U);
+  TerminateEvent();
   return XIL_INTERFACE_SUCCESS;
 }
 

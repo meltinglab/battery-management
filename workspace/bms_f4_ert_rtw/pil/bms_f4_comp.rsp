@@ -20,3 +20,5 @@
 -IC:/Program\ Files/MATLAB/R2021a/toolbox/coder/rtiostream/src
 -IC:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CoderAssumpTgtAppSvc
 -IC:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions
+-IC:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CodeInstrTgtAppSvc
+-IC:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/include

@@ -28,6 +28,7 @@
 #include "messages/slMessagesSfcnBridge.h"
 #include "strings/slStringSfcnAPI.h"
 #include "mwstringutil.h"
+#include "coder/connectivity/CodeInstrHostAppSvc/CodeInstrHostAppSvc_CInterface.h"
 #include "coder/connectivity/CoderAssumpHostAppSvc/CoderAssumpHostAppSvc_CInterface.h"
 
 static real_T rtInf;
@@ -255,6 +256,37 @@ static void copyStringIOData(void * const dstPtr, void * const srcPtr, uint8_T *
   (*tgtPtrPtr)+=(maxBytesConsumed/sizeof(**tgtPtrPtr));
 }
 
+/* returns data needed by code instrumentation service */
+static CodeInstrServiceData_T* codeInstrServiceData(SimStruct *S, uint8_T
+  memUnitSizeBytes)
+{
+  CodeInstrServiceData_T* pCodeInstrServiceData = (CodeInstrServiceData_T*)
+    mxCalloc(1, sizeof(CodeInstrServiceData_T));
+  char * simulinkBlockPath = getSimulinkBlockPath(S);
+  if (simulinkBlockPath == NULL) {
+    ssSetErrorStatus(S,
+                     "ModelBlock SIL/PIL unexpected error: getSimulinkBlockPath returned NULL pointer. Check search string was found in ssGetPath.\n");
+    return NULL;
+  }
+
+  if (pCodeInstrServiceData == NULL) {
+    ssSetErrorStatus( S,
+                     "Error in allocating memory for code instrumentation data through mxCalloc.");
+    return NULL;
+  }                                    /* if */
+
+  pCodeInstrServiceData->infoPath =
+    "C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/pil";
+  pCodeInstrServiceData->blockPath = simulinkBlockPath;
+  pCodeInstrServiceData->rootModel = ssGetPath(ssGetRootSS(S));
+  pCodeInstrServiceData->memUnitSize = memUnitSizeBytes;
+  pCodeInstrServiceData->isProfilingEnabled = true;
+  pCodeInstrServiceData->inTheLoopType = 4;
+  pCodeInstrServiceData->silPilInterfaceFcn =
+    "@coder.connectivity.SimulinkInterface.getSILPILInterface";
+  return pCodeInstrServiceData;
+}
+
 static void callStopHookAndFreeSFcnMemory(SimStruct *S)
 {
   closeAndFreeTargetIOFd(S);
@@ -329,10 +361,21 @@ static void callStopHookAndFreeSFcnMemory(SimStruct *S)
       void * pXILUtils = (void *) ssGetPWorkValue(S, 6);
       void * pComms = (void *) ssGetPWorkValue(S, 7);
       void * pXILService = (void *) ssGetPWorkValue(S, 9);
-      void * pCoderAssumptionsApp = (void *) ssGetPWorkValue(S, 10);
+      void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+      void * pCoderAssumptionsApp = (void *) ssGetPWorkValue(S, 12);
+      if (pCodeInstrService != NULL) {
+        uint8_T memUnitSizeBytes = 1;
+        CodeInstrServiceData_T* pCodeInstrServiceData = codeInstrServiceData(S,
+          memUnitSizeBytes);
+        codeInstrHostAppSvcDestroy(pCodeInstrService, pCodeInstrServiceData);
+        mxFree((void *)pCodeInstrServiceData->blockPath);
+        mxFree(pCodeInstrServiceData);
+      }                                /* if */
+
+      ssSetPWorkValue(S, 10, NULL);
       if (pCoderAssumptionsApp != NULL) {
         coderAssumpHostAppSvcDestroy(pCoderAssumptionsApp);
-        ssSetPWorkValue(S, 10, NULL);
+        ssSetPWorkValue(S, 12, NULL);
       }                                /* if */
 
       if (pXILService != NULL) {
@@ -1055,6 +1098,15 @@ static void processParams(SimStruct * S)
           mwSize dataInSize = 0;
           XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
 
+          /* provide the time information to the code instrumentation service */
+          {
+            void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+            time_T simTime = ssGetT(S);
+            if (pCodeInstrService != NULL) {
+              codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+            }                          /* if */
+          }
+
           /* dispatch command to the target */
           if (commandDispatch(S, IOBufferPtr, 125)!=XILHOSTAPPSVC_SUCCESS) {
             return;
@@ -1291,6 +1343,9 @@ static boolean_T startAndSetupApplication(SimStruct *S)
     SIL_DEBUGGING_DATA_T * silDebuggingDataPtr = (SIL_DEBUGGING_DATA_T *)
       ssGetPWorkValue(S, 2);
     XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
+    void* pCodeInstrService = NULL;
+    CodeInstrServiceData_T* pCodeInstrServiceData = codeInstrServiceData(S,
+      memUnitSizeBytes);
     void * pCoderAssumptionsApp = NULL;
     if (xilCommsCreate(&pComms, rtIOStreamDataPtr, silDebuggingDataPtr,
                        memUnitSizeBytes, pMemUnitTransformer, pXILUtils, 0) !=
@@ -1303,6 +1358,21 @@ static boolean_T startAndSetupApplication(SimStruct *S)
         XILHOSTAPPSVC_SUCCESS) {
       return false;
     }                                  /* if */
+
+    {
+      void * pCodeInstrMultiRunData = NULL;
+      pCodeInstrMultiRunData = (void *) ssGetPWorkValue(S, 11);
+      if (codeInstrHostAppSvcCreate(&pCodeInstrService, pCodeInstrServiceData,
+           pComms, pMemUnitTransformer, 32, pXILUtils, memUnitSizeBytes, 0,
+           pCodeInstrMultiRunData) != CODEINSTRHOSTAPPSVC_SUCCESS) {
+        mxFree((void *)pCodeInstrServiceData->blockPath);
+        mxFree(pCodeInstrServiceData);
+        return false;
+      }                                /* if */
+
+      mxFree((void *)pCodeInstrServiceData->blockPath);
+      mxFree(pCodeInstrServiceData);
+    }
 
     {
       mxArray * codeGenComponent = mxCreateString("bms_f4");
@@ -1328,11 +1398,13 @@ static boolean_T startAndSetupApplication(SimStruct *S)
     }
 
     xilCommsRegisterApplication(pComms, pXILService);
+    xilCommsRegisterApplication(pComms, pCodeInstrService);
     xilCommsRegisterApplication(pComms, pCoderAssumptionsApp);
     ssSetPWorkValue(S, 9, pXILService);
     ssSetPWorkValue(S, 7, pComms);
     ssSetPWorkValue(S, 6, pXILUtils);
-    ssSetPWorkValue(S, 10, pCoderAssumptionsApp);
+    ssSetPWorkValue(S, 10, pCodeInstrService);
+    ssSetPWorkValue(S, 12, pCoderAssumptionsApp);
   }
 
   {
@@ -1380,6 +1452,15 @@ static boolean_T startAndSetupApplication(SimStruct *S)
       uint8_T * mxMemUnitPtr;
       mwSize dataInSize = 0;
       XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
+
+      /* provide the time information to the code instrumentation service */
+      {
+        void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+        time_T simTime = ssGetT(S);
+        if (pCodeInstrService != NULL) {
+          codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+        }                              /* if */
+      }
 
       /* dispatch command to the target */
       if (commandDispatch(S, IOBufferPtr, 5)!=XILHOSTAPPSVC_SUCCESS) {
@@ -1561,6 +1642,15 @@ static void sendInitializeCommand(SimStruct *S)
       uint8_T * mxMemUnitPtr;
       mwSize dataInSize = 0;
       XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
+
+      /* provide the time information to the code instrumentation service */
+      {
+        void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+        time_T simTime = ssGetT(S);
+        if (pCodeInstrService != NULL) {
+          codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+        }                              /* if */
+      }
 
       /* dispatch command to the target */
       if (commandDispatch(S, IOBufferPtr, 5)!=XILHOSTAPPSVC_SUCCESS) {
@@ -2092,7 +2182,7 @@ static void mdlInitializeSizes(SimStruct *S)
   if (ssRTWGenIsCodeGen(S) || ssIsExternalSim(S) ) {
     ssSetNumPWork(S, 0);
   } else {
-    ssSetNumPWork(S, 11);
+    ssSetNumPWork(S, 13);
   }                                    /* if */
 
   ssSetNumRWork(S, 0);
@@ -2285,6 +2375,11 @@ static void mdlSetupRuntimeResources(SimStruct *S)
     mxFree((void *) simulinkBlockPath);
     mxFree(rootLoggingPath);
   }
+
+  {
+    void * multiRunDataPtr = xilSimulinkUtilsStaticInitMultiRunInstrData();
+    ssSetPWorkValue(S, 11, multiRunDataPtr);
+  }
 }
 
 #endif                                 /* MDL_SETUP_RUNTIME_RESOURCES */
@@ -2344,6 +2439,15 @@ static void mdlSimStatusChange(SimStruct *S, ssSimStatusChangeType simStatus)
         uint8_T * mxMemUnitPtr;
         mwSize dataInSize = 0;
         XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
+
+        /* provide the time information to the code instrumentation service */
+        {
+          void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+          time_T simTime = ssGetT(S);
+          if (pCodeInstrService != NULL) {
+            codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+          }                            /* if */
+        }
 
         /* dispatch command to the target */
         if (commandDispatch(S, IOBufferPtr, 5)!=XILHOSTAPPSVC_SUCCESS) {
@@ -2436,6 +2540,8 @@ static void mdlSimStatusChange(SimStruct *S, ssSimStatusChangeType simStatus)
 
 static void XILoutputTID01(SimStruct *S, int tid)
 {
+  time_T taskTime = ssGetTaskTime(S, 0);
+
   {
     uint8_T * mxMemUnitPtr;
     mwSize dataInSize = 0;
@@ -2677,6 +2783,14 @@ static void XILoutputTID01(SimStruct *S, int tid)
       uint8_T * mxMemUnitPtr;
       mwSize dataInSize = 0;
       XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
+
+      /* provide the time information to the code instrumentation service */
+      {
+        void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+        if (pCodeInstrService != NULL) {
+          codeInstrHostAppSvcSetTime(pCodeInstrService, taskTime);
+        }                              /* if */
+      }
 
       /* dispatch command to the target */
       if (commandDispatch(S, IOBufferPtr, 1095)!=XILHOSTAPPSVC_SUCCESS) {
@@ -3128,6 +3242,15 @@ static void mdlTerminate(SimStruct *S)
           mwSize dataInSize = 0;
           XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
 
+          /* provide the time information to the code instrumentation service */
+          {
+            void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+            time_T simTime = ssGetT(S);
+            if (pCodeInstrService != NULL) {
+              codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+            }                          /* if */
+          }
+
           /* dispatch command to the target */
           if (commandDispatch(S, IOBufferPtr, 5)!=XILHOSTAPPSVC_SUCCESS) {
             callStopHookAndFreeSFcnMemory(S);
@@ -3223,6 +3346,15 @@ static void mdlTerminate(SimStruct *S)
           mwSize dataInSize = 0;
           XIL_IOBuffer_T * IOBufferPtr = (XIL_IOBuffer_T *) ssGetPWorkValue(S, 1);
 
+          /* provide the time information to the code instrumentation service */
+          {
+            void * pCodeInstrService = (void *) ssGetPWorkValue(S, 10);
+            time_T simTime = ssGetT(S);
+            if (pCodeInstrService != NULL) {
+              codeInstrHostAppSvcSetTime(pCodeInstrService, simTime);
+            }                          /* if */
+          }
+
           /* dispatch command to the target */
           if (commandDispatch(S, IOBufferPtr, 1)!=XILHOSTAPPSVC_SUCCESS) {
             callStopHookAndFreeSFcnMemory(S);
@@ -3245,6 +3377,12 @@ static void mdlCleanupRuntimeResources(SimStruct *S)
   if (ssRTWGenIsCodeGen(S) || ssIsExternalSim(S)) {
     return;
   }                                    /* if */
+
+  {
+    void * pCodeInstrMultiRunData = NULL;
+    pCodeInstrMultiRunData = (void *) ssGetPWorkValue(S, 11);
+    xilSimulinkUtilsStaticFreeMultiRunInstrData(pCodeInstrMultiRunData);
+  }
 
   if (ssGetPWork(S) != NULL) {
     int * pIsXILApplicationStarted = (int *) ssGetPWorkValue(S, 5);

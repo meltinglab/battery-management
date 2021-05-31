@@ -2,7 +2,7 @@
 ## Makefile generated for component 'bms_f4'. 
 ## 
 ## Makefile     : bms_f4.mk
-## Generated on : Mon May 31 17:27:16 2021
+## Generated on : Mon May 31 19:38:46 2021
 ## Final product: ./bms_f4.elf
 ## Product type : executable
 ## 
@@ -215,7 +215,7 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
-DEFINES_OPTS = -DTID01EQ=0 -DCODER_ASSUMPTIONS_ENABLED=1 -DRTIOSTREAM_RX_BUFFER_BYTE_SIZE=128 -DRTIOSTREAM_TX_BUFFER_BYTE_SIZE=128 -DMEM_UNIT_BYTES=1 -DMemUnit_T=uint8_T
+DEFINES_OPTS = -DTID01EQ=0 -DPROFILING_DEFINE_UINT64_TIMER_TYPE -DCODER_ASSUMPTIONS_ENABLED=1 -DRTIOSTREAM_RX_BUFFER_BYTE_SIZE=128 -DRTIOSTREAM_TX_BUFFER_BYTE_SIZE=128 -DCODE_INSTRUMENTATION_ENABLED=1 -DMEM_UNIT_BYTES=1 -DMemUnit_T=uint8_T
 DEFINES_SKIPFORSIL = -DUSE_STDPERIPH_DRIVER -DUSE_STM32F4_DISCOVERY -DSTM32F4XX -DARM_MATH_CM4=1 -D__FPU_PRESENT=1 -D__FPU_USED=1U -DHSE_VALUE=8000000 -DNULL=0 -D__START=_start -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -DRT
 DEFINES_STANDARD = -DMODEL=bms_f4 -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 
@@ -225,7 +225,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_interface_lib.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_data_stream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_services.c $(START_DIR)/bms_f4_ert_rtw/pil/xil_interface.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/rtiostream_utils.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_app.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_data_stream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_rtiostream.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/startup_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/pil_main_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/rtiostream_serial_dma_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/system_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/syscalls_stm32f4xx.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c
+SRCS = $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_interface_lib.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_data_stream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_services.c $(START_DIR)/bms_f4_ert_rtw/pil/xil_interface.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils/rtiostream_utils.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_app.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_data_stream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/coder_assumptions_rtiostream.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/startup_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/pil_main_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/rtiostream_serial_dma_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/system_stm32f4xx.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/src/syscalls_stm32f4xx.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c $(START_DIR)/bms_f4_ert_rtw/pil/xil_instrumentation.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/codeinstr_data_stream.c $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/codeinstr_rtiostream.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/profiler_timer.c
 
 ALL_SRCS = $(SRCS)
 
@@ -233,7 +233,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = xil_interface_lib.o xil_data_stream.o xil_services.o xil_interface.o xilcomms_rtiostream.o xil_rtiostream.o rtiostream_utils.o coder_assumptions_app.o coder_assumptions_data_stream.o coder_assumptions_rtiostream.o startup_stm32f4xx.o pil_main_stm32f4xx.o rtiostream_serial_dma_stm32f4xx.o system_stm32f4xx.o syscalls_stm32f4xx.o stm32f4xx_usart.o stm32f4xx_rcc.o stm32f4xx_gpio.o stm32f4xx_dma.o misc.o
+OBJS = xil_interface_lib.o xil_data_stream.o xil_services.o xil_interface.o xilcomms_rtiostream.o xil_rtiostream.o rtiostream_utils.o coder_assumptions_app.o coder_assumptions_data_stream.o coder_assumptions_rtiostream.o startup_stm32f4xx.o pil_main_stm32f4xx.o rtiostream_serial_dma_stm32f4xx.o system_stm32f4xx.o syscalls_stm32f4xx.o stm32f4xx_usart.o stm32f4xx_rcc.o stm32f4xx_gpio.o stm32f4xx_dma.o misc.o xil_instrumentation.o codeinstr_data_stream.o codeinstr_rtiostream.o profiler_timer.o
 
 ALL_OBJS = $(OBJS)
 
@@ -247,7 +247,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-MODELREF_LIBS = ../bms_f4.o ../bms_f4_data.o ../rtGetInf.o ../rtGetNaN.o ../rt_nonfinite.o
+MODELREF_LIBS = ../instrumented/bms_f4.o ../instrumented/bms_f4_data.o ../instrumented/rtGetInf.o ../instrumented/rtGetNaN.o ../instrumented/rt_nonfinite.o
 
 LIBS = $(START_DIR)/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/RTOS/RTX/LIB/GCC/libRTX_CM4.a
 
@@ -283,7 +283,7 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 # C++ Linker
 #---------------
 
-CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs     -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
+CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs      -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
 
 CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
 
@@ -291,7 +291,7 @@ CPP_LDFLAGS += $(CPP_LDFLAGS_SKIPFORSIL)
 # C++ Shared Library Linker
 #------------------------------
 
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs     -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs      -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
 
 CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -299,7 +299,7 @@ CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 # Linker
 #-----------
 
-LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs     -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
+LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs      -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
 
 LDFLAGS += $(LDFLAGS_SKIPFORSIL)
 
@@ -323,7 +323,7 @@ MEX_CFLAGS += $(MEX_Compiler_BASIC)
 # Shared Library Linker
 #--------------------------
 
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs     -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --specs=nano.specs --specs=nosys.specs      -T "C:\ProgramData\MATLAB\SupportPackages\R2021a\toolbox\target\supportpackages\stm32f4discovery\src\arm-gcc-link.ld"
 
 SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -523,6 +523,34 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(MODELREF_LIBS) $(LIBS)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.s
+	$(AS) $(ASFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.S
+	$(AS) $(ASFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.cc
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.C
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/%.cxx
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
 xil_interface_lib.o : $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/xil_interface_lib.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
@@ -600,6 +628,22 @@ stm32f4xx_dma.o : $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_S
 
 
 misc.o : $(START_DIR)/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+xil_instrumentation.o : $(START_DIR)/bms_f4_ert_rtw/pil/xil_instrumentation.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+codeinstr_data_stream.o : $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/codeinstr_data_stream.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+codeinstr_rtiostream.o : $(MATLAB_ROOT)/toolbox/rtw/targets/pil/c/codeinstr_rtiostream.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+profiler_timer.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/profile/src/profiler_timer.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

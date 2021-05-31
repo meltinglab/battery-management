@@ -2,7 +2,7 @@
 ## Makefile generated for component 'bms_f4'. 
 ## 
 ## Makefile     : bms_f4.mk
-## Generated on : Mon May 31 17:27:12 2021
+## Generated on : Mon May 31 19:11:17 2021
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/bms_f4.elf
 ## Product type : executable
 ## 
