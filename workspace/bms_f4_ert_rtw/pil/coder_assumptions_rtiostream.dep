@@ -1,0 +1,161 @@
+coder_assumptions_rtiostream.o: \
+ C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/coder_assumptions_rtiostream.c \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/stm32f4xx.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/core_cm4.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_version.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_compiler.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_gcc.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/mpu_armv7.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Project/Peripheral_Examples/SysTick/stm32f4xx_conf.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_crc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dac.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fsmc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_hash.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sdio.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/misc.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/MW_target_hardware_resources.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/blapp_support.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/scheduler/include/SysTickScheduler.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_init_board.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_gpio_wrapper.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_adc_wrapper.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_audio_common.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_mp45dt02_mems_mic.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_cs43l22_codec.h \
+ C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/rx_tx_buffer_sizes.h \
+ C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_common.h \
+ C:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CoderAssumpTgtAppSvc/CoderAssumpTgtAppSvc_CInterface.h \
+ C:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CoderAssumpTgtAppSvc/CoderAssumpTgtAppSvc_spec.h \
+ C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/stm32f4xx.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/core_cm4.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_version.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_compiler.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/cmsis_gcc.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/Include/mpu_armv7.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/system_stm32f4xx.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Project/Peripheral_Examples/SysTick/stm32f4xx_conf.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_crc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dac.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fsmc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_hash.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sdio.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/STM32F4xx_StdPeriph_Driver/inc/misc.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/MW_target_hardware_resources.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/STM32F4-Discovery_FW_V1.1.0/Libraries/CMSIS/ST/STM32F4xx/Include/system_stm32f4xx.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/blapp_support.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_wrapper.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/scheduler/include/SysTickScheduler.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/armcortexmbase/scheduler/include/arm_cortex_m_multitasking.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_init_board.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_gpio_wrapper.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4xx_adc_wrapper.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_audio_common.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_mp45dt02_mems_mic.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/stm32f4discovery/include/stm32f4discovery_cs43l22_codec.h:
+
+C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/rx_tx_buffer_sizes.h:
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xil_common.h:
+
+C:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CoderAssumpTgtAppSvc/CoderAssumpTgtAppSvc_CInterface.h:
+
+C:/Program\ Files/MATLAB/R2021a/extern/include/coder/connectivity/CoderAssumpTgtAppSvc/CoderAssumpTgtAppSvc_spec.h:
+
+C:/Program\ Files/MATLAB/R2021a/toolbox/rtw/targets/pil/c/xilcomms_rtiostream.h:

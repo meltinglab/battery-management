@@ -1,0 +1,1431 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+                              coder_assumptions_app.o (CA_bms_f4_HWRes)
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+                              C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o) (caVerifyPortableWordSizes)
+C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+                              C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o) (denormalAsZero)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+                              ../bms_f4.o (ceil)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+                              ../bms_f4.o (__aeabi_dmul)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              ../bms_f4.o (__aeabi_dsub)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              ../bms_f4.o (__aeabi_ddiv)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                              ../rt_nonfinite.o (__aeabi_dcmpeq)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                              ../bms_f4.o (__aeabi_d2uiz)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              ../rt_nonfinite.o (__aeabi_d2f)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                              coder_assumptions_data_stream.o (memcpy)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+                              syscalls_stm32f4xx.o (errno)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o) (_free_r)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o) (__malloc_free_list)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+                              c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o) (__retarget_lock_acquire_recursive)
+
+Allocating common symbols
+Common symbol       size              file
+
+__lock___atexit_recursive_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+__lock___arc4random_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+CA_bms_f4_PWSRes    0x2               C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+rtNaNF              0x4               ../rt_nonfinite.o
+CA_bms_f4_ActHW     0x4c              C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+errno               0x4               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+__lock___env_recursive_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+__lock___sinit_recursive_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+rtInfF              0x4               ../rt_nonfinite.o
+bms_f4_B            0x1d0             ../bms_f4.o
+rtInf               0x8               ../rt_nonfinite.o
+bms_f4_U            0x448             ../bms_f4.o
+rtNaN               0x8               ../rt_nonfinite.o
+rtMinusInf          0x8               ../rt_nonfinite.o
+bms_f4_Y            0x270             ../bms_f4.o
+__lock___at_quick_exit_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+aGlobalInt          0x4               C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+CA_bms_f4_HWRes     0x24              C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+__lock___dd_hash_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+__lock___tz_mutex   0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+rtMinusInfF         0x4               ../rt_nonfinite.o
+__lock___sfp_recursive_mutex
+                    0x1               c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+bms_f4_DW           0x110             ../bms_f4.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x00000000        0x0 coder_assumptions_app.o
+ .data          0x00000000        0x0 coder_assumptions_app.o
+ .bss           0x00000000        0x0 coder_assumptions_app.o
+ .text          0x00000000        0x0 coder_assumptions_data_stream.o
+ .data          0x00000000        0x0 coder_assumptions_data_stream.o
+ .bss           0x00000000        0x0 coder_assumptions_data_stream.o
+ .rodata.CODERASSUMPTGTAPPSVC_ERROR
+                0x00000000        0x1 coder_assumptions_data_stream.o
+ .rodata.CODERASSUMPTGTAPPSVC_SUCCESS
+                0x00000000        0x1 coder_assumptions_data_stream.o
+ .text.coderAssumptionsTerminate
+                0x00000000        0xa coder_assumptions_data_stream.o
+ .text          0x00000000        0x0 coder_assumptions_rtiostream.o
+ .data          0x00000000        0x0 coder_assumptions_rtiostream.o
+ .bss           0x00000000        0x0 coder_assumptions_rtiostream.o
+ .rodata.CODERASSUMPTGTAPPSVC_SUCCESS
+                0x00000000        0x1 coder_assumptions_rtiostream.o
+ .text.coderAssumpTgtAppSvcDestroy
+                0x00000000        0x4 coder_assumptions_rtiostream.o
+ .text          0x00000000        0x0 misc.o
+ .data          0x00000000        0x0 misc.o
+ .bss           0x00000000        0x0 misc.o
+ .text.NVIC_PriorityGroupConfig
+                0x00000000       0x1c misc.o
+ .text.NVIC_SetVectorTable
+                0x00000000       0x24 misc.o
+ .text.NVIC_SystemLPConfig
+                0x00000000       0x44 misc.o
+ .text.SysTick_CLKSourceConfig
+                0x00000000       0x30 misc.o
+ .text          0x00000000        0x0 pil_main_stm32f4xx.o
+ .data          0x00000000        0x0 pil_main_stm32f4xx.o
+ .bss           0x00000000        0x0 pil_main_stm32f4xx.o
+ .text          0x00000000        0x0 rtiostream_serial_dma_stm32f4xx.o
+ .data          0x00000000        0x0 rtiostream_serial_dma_stm32f4xx.o
+ .bss           0x00000000        0x0 rtiostream_serial_dma_stm32f4xx.o
+ .text.rtIOStreamClose
+                0x00000000        0xc rtiostream_serial_dma_stm32f4xx.o
+ .text.rtIOStreamSend2
+                0x00000000       0x6c rtiostream_serial_dma_stm32f4xx.o
+ .text          0x00000000        0x0 rtiostream_utils.o
+ .data          0x00000000        0x0 rtiostream_utils.o
+ .bss           0x00000000        0x0 rtiostream_utils.o
+ .text          0x00000000        0x0 startup_stm32f4xx.o
+ .data          0x00000000        0x0 startup_stm32f4xx.o
+ .bss           0x00000000        0x0 startup_stm32f4xx.o
+ .text          0x00000000        0x0 stm32f4xx_dma.o
+ .data          0x00000000        0x0 stm32f4xx_dma.o
+ .bss           0x00000000        0x0 stm32f4xx_dma.o
+ .text.DMA_StructInit
+                0x00000000       0x64 stm32f4xx_dma.o
+ .text.DMA_PeriphIncOffsetSizeConfig
+                0x00000000       0x2c stm32f4xx_dma.o
+ .text.DMA_FlowControllerConfig
+                0x00000000       0x2c stm32f4xx_dma.o
+ .text.DMA_SetCurrDataCounter
+                0x00000000       0x18 stm32f4xx_dma.o
+ .text.DMA_DoubleBufferModeConfig
+                0x00000000       0x34 stm32f4xx_dma.o
+ .text.DMA_DoubleBufferModeCmd
+                0x00000000       0x32 stm32f4xx_dma.o
+ .text.DMA_MemoryTargetConfig
+                0x00000000       0x22 stm32f4xx_dma.o
+ .text.DMA_GetCurrentMemoryTarget
+                0x00000000       0x26 stm32f4xx_dma.o
+ .text.DMA_GetFIFOStatus
+                0x00000000       0x1a stm32f4xx_dma.o
+ .text.DMA_GetFlagStatus
+                0x00000000       0x74 stm32f4xx_dma.o
+ .text.DMA_ClearFlag
+                0x00000000       0x54 stm32f4xx_dma.o
+ .text          0x00000000        0x0 stm32f4xx_gpio.o
+ .data          0x00000000        0x0 stm32f4xx_gpio.o
+ .bss           0x00000000        0x0 stm32f4xx_gpio.o
+ .text.GPIO_DeInit
+                0x00000000      0x120 stm32f4xx_gpio.o
+ .text.GPIO_PinLockConfig
+                0x00000000       0x40 stm32f4xx_gpio.o
+ .text.GPIO_ReadInputDataBit
+                0x00000000       0x36 stm32f4xx_gpio.o
+ .text.GPIO_ReadInputData
+                0x00000000       0x10 stm32f4xx_gpio.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000       0x36 stm32f4xx_gpio.o
+ .text.GPIO_ReadOutputData
+                0x00000000       0x10 stm32f4xx_gpio.o
+ .text.GPIO_SetBits
+                0x00000000       0x18 stm32f4xx_gpio.o
+ .text.GPIO_ResetBits
+                0x00000000       0x18 stm32f4xx_gpio.o
+ .text.GPIO_WriteBit
+                0x00000000       0x30 stm32f4xx_gpio.o
+ .text.GPIO_Write
+                0x00000000       0x18 stm32f4xx_gpio.o
+ .text.GPIO_ToggleBits
+                0x00000000       0x1e stm32f4xx_gpio.o
+ .text          0x00000000        0x0 stm32f4xx_rcc.o
+ .data          0x00000000        0x0 stm32f4xx_rcc.o
+ .bss           0x00000000        0x0 stm32f4xx_rcc.o
+ .text.RCC_DeInit
+                0x00000000       0x48 stm32f4xx_rcc.o
+ .text.RCC_HSEConfig
+                0x00000000       0x20 stm32f4xx_rcc.o
+ .text.RCC_WaitForHSEStartUp
+                0x00000000       0x5c stm32f4xx_rcc.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_HSICmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_LSEConfig
+                0x00000000       0x3c stm32f4xx_rcc.o
+ .text.RCC_LSICmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_PLLConfig
+                0x00000000       0x34 stm32f4xx_rcc.o
+ .text.RCC_PLLCmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_PLLI2SConfig
+                0x00000000       0x20 stm32f4xx_rcc.o
+ .text.RCC_PLLI2SCmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_MCO1Config
+                0x00000000       0x34 stm32f4xx_rcc.o
+ .text.RCC_MCO2Config
+                0x00000000       0x34 stm32f4xx_rcc.o
+ .text.RCC_SYSCLKConfig
+                0x00000000       0x30 stm32f4xx_rcc.o
+ .text.RCC_GetSYSCLKSource
+                0x00000000       0x14 stm32f4xx_rcc.o
+ .text.RCC_HCLKConfig
+                0x00000000       0x30 stm32f4xx_rcc.o
+ .text.RCC_PCLK1Config
+                0x00000000       0x30 stm32f4xx_rcc.o
+ .text.RCC_PCLK2Config
+                0x00000000       0x30 stm32f4xx_rcc.o
+ .text.RCC_RTCCLKConfig
+                0x00000000       0x54 stm32f4xx_rcc.o
+ .text.RCC_RTCCLKCmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_BackupResetCmd
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text.RCC_I2SCLKConfig
+                0x00000000       0x14 stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphClockCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphClockCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_APB2PeriphClockCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB1PeriphResetCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphResetCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphResetCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_APB1PeriphResetCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_APB2PeriphResetCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB1PeriphClockLPModeCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphClockLPModeCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphClockLPModeCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_APB1PeriphClockLPModeCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_APB2PeriphClockLPModeCmd
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_ITConfig
+                0x00000000       0x4c stm32f4xx_rcc.o
+ .text.RCC_GetFlagStatus
+                0x00000000       0x78 stm32f4xx_rcc.o
+ .text.RCC_ClearFlag
+                0x00000000       0x14 stm32f4xx_rcc.o
+ .text.RCC_GetITStatus
+                0x00000000       0x38 stm32f4xx_rcc.o
+ .text.RCC_ClearITPendingBit
+                0x00000000       0x1c stm32f4xx_rcc.o
+ .text          0x00000000        0x0 stm32f4xx_usart.o
+ .data          0x00000000        0x0 stm32f4xx_usart.o
+ .bss           0x00000000        0x0 stm32f4xx_usart.o
+ .text.USART_DeInit
+                0x00000000       0xd0 stm32f4xx_usart.o
+ .text.USART_ClockInit
+                0x00000000       0x4c stm32f4xx_usart.o
+ .text.USART_ClockStructInit
+                0x00000000       0x22 stm32f4xx_usart.o
+ .text.USART_SetPrescaler
+                0x00000000       0x34 stm32f4xx_usart.o
+ .text.USART_OverSampling8Cmd
+                0x00000000       0x3e stm32f4xx_usart.o
+ .text.USART_OneBitMethodCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_SendData
+                0x00000000       0x1e stm32f4xx_usart.o
+ .text.USART_ReceiveData
+                0x00000000       0x16 stm32f4xx_usart.o
+ .text.USART_SetAddress
+                0x00000000       0x34 stm32f4xx_usart.o
+ .text.USART_ReceiverWakeUpCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_WakeUpConfig
+                0x00000000       0x32 stm32f4xx_usart.o
+ .text.USART_LINBreakDetectLengthConfig
+                0x00000000       0x32 stm32f4xx_usart.o
+ .text.USART_LINCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_SendBreak
+                0x00000000       0x1a stm32f4xx_usart.o
+ .text.USART_HalfDuplexCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_SetGuardTime
+                0x00000000       0x36 stm32f4xx_usart.o
+ .text.USART_SmartCardCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_SmartCardNACKCmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_IrDAConfig
+                0x00000000       0x32 stm32f4xx_usart.o
+ .text.USART_IrDACmd
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_ITConfig
+                0x00000000       0x90 stm32f4xx_usart.o
+ .text.USART_GetFlagStatus
+                0x00000000       0x3a stm32f4xx_usart.o
+ .text.USART_ClearFlag
+                0x00000000       0x1c stm32f4xx_usart.o
+ .text.USART_GetITStatus
+                0x00000000       0xbc stm32f4xx_usart.o
+ .text.USART_ClearITPendingBit
+                0x00000000       0x40 stm32f4xx_usart.o
+ .text          0x00000000        0x0 syscalls_stm32f4xx.o
+ .data          0x00000000        0x0 syscalls_stm32f4xx.o
+ .bss           0x00000000        0x0 syscalls_stm32f4xx.o
+ .text._close   0x00000000        0xe syscalls_stm32f4xx.o
+ .text._fstat   0x00000000       0x16 syscalls_stm32f4xx.o
+ .text._isatty  0x00000000        0xc syscalls_stm32f4xx.o
+ .text._lseek   0x00000000       0x10 syscalls_stm32f4xx.o
+ .text._open    0x00000000       0x12 syscalls_stm32f4xx.o
+ .text._read    0x00000000       0x10 syscalls_stm32f4xx.o
+ .bss.heap_end  0x00000000        0x4 syscalls_stm32f4xx.o
+ .text._sbrk    0x00000000       0x5c syscalls_stm32f4xx.o
+ .text._write   0x00000000       0x10 syscalls_stm32f4xx.o
+ .text._unlink  0x00000000        0xc syscalls_stm32f4xx.o
+ .text          0x00000000        0x0 system_stm32f4xx.o
+ .data          0x00000000        0x0 system_stm32f4xx.o
+ .bss           0x00000000        0x0 system_stm32f4xx.o
+ .text          0x00000000        0x0 xil_data_stream.o
+ .data          0x00000000        0x0 xil_data_stream.o
+ .bss           0x00000000        0x0 xil_data_stream.o
+ .rodata.XILTGTAPPSVC_ERROR
+                0x00000000        0x1 xil_data_stream.o
+ .rodata.XILTGTAPPSVC_SUCCESS
+                0x00000000        0x1 xil_data_stream.o
+ .text.silpilTerminate
+                0x00000000        0xa xil_data_stream.o
+ .text          0x00000000        0x0 xil_interface.o
+ .data          0x00000000        0x0 xil_interface.o
+ .bss           0x00000000        0x0 xil_interface.o
+ .text          0x00000000        0x0 xil_interface_lib.o
+ .data          0x00000000        0x0 xil_interface_lib.o
+ .bss           0x00000000        0x0 xil_interface_lib.o
+ .text.restoreProcessMsgContext
+                0x00000000       0x30 xil_interface_lib.o
+ .text.xilCommandDispatchAndResponse
+                0x00000000       0xbc xil_interface_lib.o
+ .text.xilGetCurrentProcessMsgContext
+                0x00000000       0x18 xil_interface_lib.o
+ .text          0x00000000        0x0 xil_rtiostream.o
+ .data          0x00000000        0x0 xil_rtiostream.o
+ .bss           0x00000000        0x0 xil_rtiostream.o
+ .rodata.XILTGTAPPSVC_SUCCESS
+                0x00000000        0x1 xil_rtiostream.o
+ .text.xilTgtAppSvcDestroy
+                0x00000000        0x4 xil_rtiostream.o
+ .text          0x00000000        0x0 xil_services.o
+ .data          0x00000000        0x0 xil_services.o
+ .bss           0x00000000        0x0 xil_services.o
+ .rodata.COMMS_SUCCESS
+                0x00000000        0x4 xil_services.o
+ .text.xilTerminateComms
+                0x00000000       0x14 xil_services.o
+ .text          0x00000000        0x0 xilcomms_rtiostream.o
+ .data          0x00000000        0x0 xilcomms_rtiostream.o
+ .bss           0x00000000        0x0 xilcomms_rtiostream.o
+ .rodata.COMMS_ERROR
+                0x00000000        0x4 xilcomms_rtiostream.o
+ .rodata.COMMS_SUCCESS
+                0x00000000        0x4 xilcomms_rtiostream.o
+ .text.commsTerminate
+                0x00000000       0x20 xilcomms_rtiostream.o
+ .text          0x00000000        0x0 ../bms_f4.o
+ .data          0x00000000        0x0 ../bms_f4.o
+ .bss           0x00000000        0x0 ../bms_f4.o
+ .bss.bms_f4_M_
+                0x00000000        0x4 ../bms_f4.o
+ .rodata.bms_f4_M
+                0x00000000        0x4 ../bms_f4.o
+ .text          0x00000000        0x0 ../bms_f4_data.o
+ .data          0x00000000        0x0 ../bms_f4_data.o
+ .bss           0x00000000        0x0 ../bms_f4_data.o
+ .text          0x00000000        0x0 ../rtGetInf.o
+ .data          0x00000000        0x0 ../rtGetInf.o
+ .bss           0x00000000        0x0 ../rtGetInf.o
+ .text          0x00000000        0x0 ../rtGetNaN.o
+ .data          0x00000000        0x0 ../rtGetNaN.o
+ .bss           0x00000000        0x0 ../rtGetNaN.o
+ .text          0x00000000        0x0 ../rt_nonfinite.o
+ .data          0x00000000        0x0 ../rt_nonfinite.o
+ .bss           0x00000000        0x0 ../rt_nonfinite.o
+ .text.rtIsInf  0x00000000       0x48 ../rt_nonfinite.o
+ .text.rtIsInfF
+                0x00000000       0x44 ../rt_nonfinite.o
+ .text          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ .data          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ .bss           0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ .text          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .data          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .bss           0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+ .data          0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+ .bss           0x00000000        0x0 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+ .data.realmin  0x00000000        0x8 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+ .text          0x00000000      0x254 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1a c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0xb8 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000000       0x5c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ COMMON         0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-reent.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .text._free_r  0x00000000       0xa0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00000000       0x38 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x00000000       0xb4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_free_list
+                0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000       0x30 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x20 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .text.__malloc_lock
+                0x00000000        0xc c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .text.__malloc_unlock
+                0x00000000        0xc c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000000       0x30 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire_recursive
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_release_recursive
+                0x00000000        0x2 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x00000000       0xb0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .ARM.attributes
+                0x00000000       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ COMMON         0x00000000        0x9 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-lock.o)
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x32 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x00000000        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00100000         xr
+SRAM             0x20000000         0x00020000         xrw
+CCMRAM           0x10000000         0x00010000         rw
+BACKUPRAM        0x40024000         0x00001000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD coder_assumptions_app.o
+LOAD coder_assumptions_data_stream.o
+LOAD coder_assumptions_rtiostream.o
+LOAD misc.o
+LOAD pil_main_stm32f4xx.o
+LOAD rtiostream_serial_dma_stm32f4xx.o
+LOAD rtiostream_utils.o
+LOAD startup_stm32f4xx.o
+LOAD stm32f4xx_dma.o
+LOAD stm32f4xx_gpio.o
+LOAD stm32f4xx_rcc.o
+LOAD stm32f4xx_usart.o
+LOAD syscalls_stm32f4xx.o
+LOAD system_stm32f4xx.o
+LOAD xil_data_stream.o
+LOAD xil_interface.o
+LOAD xil_interface_lib.o
+LOAD xil_rtiostream.o
+LOAD xil_services.o
+LOAD xilcomms_rtiostream.o
+LOAD ../bms_f4.o
+LOAD ../bms_f4_data.o
+LOAD ../rtGetInf.o
+LOAD ../rtGetNaN.o
+LOAD ../rt_nonfinite.o
+LOAD C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib
+LOAD C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a
+LOAD C:/ProgramData/MATLAB/SupportPackages/R2021a/3P.instrset/cmsis.instrset/CMSIS/RTOS/RTX/LIB/GCC/libRTX_CM4.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+START GROUP
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libnosys.a
+END GROUP
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+.text           0x08000000     0x861c
+ *(.vectors)
+ .vectors       0x08000000      0x188 startup_stm32f4xx.o
+                0x08000000                g_pfnVectors
+ *(.text*)
+ .text          0x08000188       0x40 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x080001c8       0x7c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x080001c8                _stack_init
+                0x080001d0                _start
+                0x080001d0                _mainCRTStartup
+ .text.sendResult
+                0x08000244       0xdc coder_assumptions_app.o
+ .text.transmitMemUnitBytes
+                0x08000320       0x4e coder_assumptions_app.o
+ *fill*         0x0800036e        0x2 
+ .text.sendPWS  0x08000370       0xec coder_assumptions_app.o
+ .text.sendHWImpl1
+                0x0800045c      0x148 coder_assumptions_app.o
+ .text.sendHWImpl2
+                0x080005a4      0x148 coder_assumptions_app.o
+ .text.sendHWImpl3
+                0x080006ec      0x10c coder_assumptions_app.o
+ .text.sendHWImpl4
+                0x080007f8      0x10c coder_assumptions_app.o
+ .text.sendHardwareChecks
+                0x08000904      0x150 coder_assumptions_app.o
+ .text.runChecks
+                0x08000a54       0xec coder_assumptions_app.o
+ .text.coderAssumptionsRun
+                0x08000b40       0x16 coder_assumptions_app.o
+                0x08000b40                coderAssumptionsRun
+ *fill*         0x08000b56        0x2 
+ .text.coderAssumptionsWriteData
+                0x08000b58       0x70 coder_assumptions_data_stream.o
+                0x08000b58                coderAssumptionsWriteData
+ .text.resetCoderAssumptionsWriteBuffer
+                0x08000bc8       0x3c coder_assumptions_data_stream.o
+                0x08000bc8                resetCoderAssumptionsWriteBuffer
+ .text.coderAssumptionsSendWriteBuffer
+                0x08000c04       0x3c coder_assumptions_data_stream.o
+                0x08000c04                coderAssumptionsSendWriteBuffer
+ .text.coderAssumptionsInit
+                0x08000c40       0x1e coder_assumptions_data_stream.o
+                0x08000c40                coderAssumptionsInit
+ .text.coderAssumpTgtAppSvcCreate
+                0x08000c5e        0x6 coder_assumptions_rtiostream.o
+                0x08000c5e                coderAssumpTgtAppSvcCreate
+ .text.coderAssumpTgtAppSvcAllocBuffer
+                0x08000c64       0x1c coder_assumptions_rtiostream.o
+                0x08000c64                coderAssumpTgtAppSvcAllocBuffer
+ .text.coderAssumpTgtAppSvcGetBufferDataPtr
+                0x08000c80       0x10 coder_assumptions_rtiostream.o
+                0x08000c80                coderAssumpTgtAppSvcGetBufferDataPtr
+ .text.coderAssumpTgtAppSvcSend
+                0x08000c90       0x26 coder_assumptions_rtiostream.o
+                0x08000c90                coderAssumpTgtAppSvcSend
+ *fill*         0x08000cb6        0x2 
+ .text.NVIC_Init
+                0x08000cb8       0xdc misc.o
+                0x08000cb8                NVIC_Init
+ .text.main     0x08000d94       0x70 pil_main_stm32f4xx.o
+                0x08000d94                main
+ .text.rtIOStreamOpen
+                0x08000e04       0x6c rtiostream_serial_dma_stm32f4xx.o
+                0x08000e04                rtIOStreamOpen
+ .text.rtIOStreamSend
+                0x08000e70       0x80 rtiostream_serial_dma_stm32f4xx.o
+                0x08000e70                rtIOStreamSend
+ .text.DMA1_Stream6_IRQHandler
+                0x08000ef0       0x24 rtiostream_serial_dma_stm32f4xx.o
+                0x08000ef0                DMA1_Stream6_IRQHandler
+ .text.rtIOStreamRecv
+                0x08000f14       0x98 rtiostream_serial_dma_stm32f4xx.o
+                0x08000f14                rtIOStreamRecv
+ .text.DMA_RxInit
+                0x08000fac       0xe4 rtiostream_serial_dma_stm32f4xx.o
+ .text.DMA_TxInit
+                0x08001090       0xb0 rtiostream_serial_dma_stm32f4xx.o
+ .text.UART_getRxBytes
+                0x08001140       0x4c rtiostream_serial_dma_stm32f4xx.o
+ .text.DMA1_Stream5_IRQHandler
+                0x0800118c       0x24 rtiostream_serial_dma_stm32f4xx.o
+                0x0800118c                DMA1_Stream5_IRQHandler
+ .text.USART2_init
+                0x080011b0       0xa8 rtiostream_serial_dma_stm32f4xx.o
+ .text.rtIOStreamBlockingSend
+                0x08001258       0x60 rtiostream_utils.o
+                0x08001258                rtIOStreamBlockingSend
+ .text.rtIOStreamBlockingRecv
+                0x080012b8       0x60 rtiostream_utils.o
+                0x080012b8                rtIOStreamBlockingRecv
+ .text.Default_ResetHandler
+                0x08001318       0x54 startup_stm32f4xx.o
+                0x08001318                Reset_Handler
+                0x08001318                Default_ResetHandler
+ .text.Default_Handler
+                0x0800136c        0x2 startup_stm32f4xx.o
+                0x0800136c                RTC_Alarm_IRQHandler
+                0x0800136c                HASH_RNG_IRQHandler
+                0x0800136c                EXTI2_IRQHandler
+                0x0800136c                TIM8_CC_IRQHandler
+                0x0800136c                DebugMon_Handler
+                0x0800136c                TIM1_CC_IRQHandler
+                0x0800136c                DMA2_Stream5_IRQHandler
+                0x0800136c                HardFault_Handler
+                0x0800136c                SysTick_Handler
+                0x0800136c                PVD_IRQHandler
+                0x0800136c                SDIO_IRQHandler
+                0x0800136c                TAMP_STAMP_IRQHandler
+                0x0800136c                PendSV_Handler
+                0x0800136c                NMI_Handler
+                0x0800136c                CAN2_RX1_IRQHandler
+                0x0800136c                EXTI3_IRQHandler
+                0x0800136c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0800136c                TIM1_UP_TIM10_IRQHandler
+                0x0800136c                TIM8_UP_TIM13_IRQHandler
+                0x0800136c                I2C3_ER_IRQHandler
+                0x0800136c                EXTI0_IRQHandler
+                0x0800136c                I2C2_EV_IRQHandler
+                0x0800136c                DMA1_Stream2_IRQHandler
+                0x0800136c                CAN1_RX0_IRQHandler
+                0x0800136c                FPU_IRQHandler
+                0x0800136c                OTG_HS_WKUP_IRQHandler
+                0x0800136c                UsageFault_Handler
+                0x0800136c                CAN2_SCE_IRQHandler
+                0x0800136c                DMA2_Stream2_IRQHandler
+                0x0800136c                SPI1_IRQHandler
+                0x0800136c                TIM6_DAC_IRQHandler
+                0x0800136c                TIM1_BRK_TIM9_IRQHandler
+                0x0800136c                DCMI_IRQHandler
+                0x0800136c                CAN2_RX0_IRQHandler
+                0x0800136c                DMA2_Stream3_IRQHandler
+                0x0800136c                USART6_IRQHandler
+                0x0800136c                USART3_IRQHandler
+                0x0800136c                CRYP_IRQHandler
+                0x0800136c                CAN1_RX1_IRQHandler
+                0x0800136c                UART5_IRQHandler
+                0x0800136c                DMA2_Stream0_IRQHandler
+                0x0800136c                TIM4_IRQHandler
+                0x0800136c                I2C1_EV_IRQHandler
+                0x0800136c                DMA1_Stream1_IRQHandler
+                0x0800136c                UART4_IRQHandler
+                0x0800136c                TIM3_IRQHandler
+                0x0800136c                RCC_IRQHandler
+                0x0800136c                TIM8_BRK_TIM12_IRQHandler
+                0x0800136c                EXTI15_10_IRQHandler
+                0x0800136c                ADC_IRQHandler
+                0x0800136c                DMA1_Stream7_IRQHandler
+                0x0800136c                TIM7_IRQHandler
+                0x0800136c                CAN2_TX_IRQHandler
+                0x0800136c                TIM5_IRQHandler
+                0x0800136c                DMA2_Stream7_IRQHandler
+                0x0800136c                I2C3_EV_IRQHandler
+                0x0800136c                EXTI9_5_IRQHandler
+                0x0800136c                RTC_WKUP_IRQHandler
+                0x0800136c                ETH_WKUP_IRQHandler
+                0x0800136c                SPI2_IRQHandler
+                0x0800136c                OTG_HS_EP1_IN_IRQHandler
+                0x0800136c                MemManage_Handler
+                0x0800136c                DMA1_Stream0_IRQHandler
+                0x0800136c                CAN1_TX_IRQHandler
+                0x0800136c                SVC_Handler
+                0x0800136c                EXTI4_IRQHandler
+                0x0800136c                FSMC_IRQHandler
+                0x0800136c                ETH_IRQHandler
+                0x0800136c                OTG_HS_EP1_OUT_IRQHandler
+                0x0800136c                WWDG_IRQHandler
+                0x0800136c                TIM2_IRQHandler
+                0x0800136c                OTG_FS_WKUP_IRQHandler
+                0x0800136c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0800136c                OTG_HS_IRQHandler
+                0x0800136c                EXTI1_IRQHandler
+                0x0800136c                USART2_IRQHandler
+                0x0800136c                I2C2_ER_IRQHandler
+                0x0800136c                DMA2_Stream1_IRQHandler
+                0x0800136c                CAN1_SCE_IRQHandler
+                0x0800136c                FLASH_IRQHandler
+                0x0800136c                DMA2_Stream4_IRQHandler
+                0x0800136c                BusFault_Handler
+                0x0800136c                USART1_IRQHandler
+                0x0800136c                OTG_FS_IRQHandler
+                0x0800136c                SPI3_IRQHandler
+                0x0800136c                DMA1_Stream4_IRQHandler
+                0x0800136c                I2C1_ER_IRQHandler
+                0x0800136c                DMA2_Stream6_IRQHandler
+                0x0800136c                DMA1_Stream3_IRQHandler
+ *fill*         0x0800136e        0x2 
+ .text.DMA_DeInit
+                0x08001370      0x19c stm32f4xx_dma.o
+                0x08001370                DMA_DeInit
+ .text.DMA_Init
+                0x0800150c       0xa4 stm32f4xx_dma.o
+                0x0800150c                DMA_Init
+ .text.DMA_Cmd  0x080015b0       0x32 stm32f4xx_dma.o
+                0x080015b0                DMA_Cmd
+ .text.DMA_GetCurrDataCounter
+                0x080015e2       0x10 stm32f4xx_dma.o
+                0x080015e2                DMA_GetCurrDataCounter
+ .text.DMA_GetCmdStatus
+                0x080015f2       0x2e stm32f4xx_dma.o
+                0x080015f2                DMA_GetCmdStatus
+ .text.DMA_ITConfig
+                0x08001620       0x70 stm32f4xx_dma.o
+                0x08001620                DMA_ITConfig
+ .text.DMA_GetITStatus
+                0x08001690       0xac stm32f4xx_dma.o
+                0x08001690                DMA_GetITStatus
+ .text.DMA_ClearITPendingBit
+                0x0800173c       0x54 stm32f4xx_dma.o
+                0x0800173c                DMA_ClearITPendingBit
+ .text.GPIO_Init
+                0x08001790      0x114 stm32f4xx_gpio.o
+                0x08001790                GPIO_Init
+ .text.GPIO_StructInit
+                0x080018a4       0x2a stm32f4xx_gpio.o
+                0x080018a4                GPIO_StructInit
+ .text.GPIO_PinAFConfig
+                0x080018ce       0x9a stm32f4xx_gpio.o
+                0x080018ce                GPIO_PinAFConfig
+ .text.RCC_GetClocksFreq
+                0x08001968      0x154 stm32f4xx_rcc.o
+                0x08001968                RCC_GetClocksFreq
+ .text.RCC_AHB1PeriphClockCmd
+                0x08001abc       0x38 stm32f4xx_rcc.o
+                0x08001abc                RCC_AHB1PeriphClockCmd
+ .text.RCC_APB1PeriphClockCmd
+                0x08001af4       0x38 stm32f4xx_rcc.o
+                0x08001af4                RCC_APB1PeriphClockCmd
+ .text.USART_Init
+                0x08001b2c      0x170 stm32f4xx_usart.o
+                0x08001b2c                USART_Init
+ .text.USART_StructInit
+                0x08001c9c       0x30 stm32f4xx_usart.o
+                0x08001c9c                USART_StructInit
+ .text.USART_Cmd
+                0x08001ccc       0x3a stm32f4xx_usart.o
+                0x08001ccc                USART_Cmd
+ .text.USART_DMACmd
+                0x08001d06       0x48 stm32f4xx_usart.o
+                0x08001d06                USART_DMACmd
+ .text._exit    0x08001d4e        0x6 syscalls_stm32f4xx.o
+                0x08001d4e                _exit
+ .text.SystemInit
+                0x08001d54       0x68 system_stm32f4xx.o
+                0x08001d54                SystemInit
+ .text.SystemCoreClockUpdate
+                0x08001dbc       0xf8 system_stm32f4xx.o
+                0x08001dbc                SystemCoreClockUpdate
+ .text.SetSysClock
+                0x08001eb4       0xec system_stm32f4xx.o
+ .text.resetXILWriteBuffer
+                0x08001fa0       0x60 xil_data_stream.o
+                0x08001fa0                resetXILWriteBuffer
+ .text.silpilInit
+                0x08002000       0x1e xil_data_stream.o
+                0x08002000                silpilInit
+ *fill*         0x0800201e        0x2 
+ .text.sendWriteBuffer
+                0x08002020       0x40 xil_data_stream.o
+ .text.xilWriteData
+                0x08002060       0xac xil_data_stream.o
+                0x08002060                xilWriteData
+ .text.xilReadData
+                0x0800210c       0xbc xil_data_stream.o
+                0x0800210c                xilReadData
+ .text.xilDataFlush
+                0x080021c8       0x40 xil_data_stream.o
+                0x080021c8                xilDataFlush
+ .text.xilProcessParams
+                0x08002208       0x16 xil_interface.o
+                0x08002208                xilProcessParams
+ .text.xilGetDataTypeInfo
+                0x0800221e       0x6a xil_interface.o
+                0x0800221e                xilGetDataTypeInfo
+ .text.xilInitialize
+                0x08002288       0x2a xil_interface.o
+                0x08002288                xilInitialize
+ .text.xilPause
+                0x080022b2       0x20 xil_interface.o
+                0x080022b2                xilPause
+ .text.xilSystemInitialize
+                0x080022d2       0x20 xil_interface.o
+                0x080022d2                xilSystemInitialize
+ .text.xilSystemReset
+                0x080022f2       0x20 xil_interface.o
+                0x080022f2                xilSystemReset
+ *fill*         0x08002312        0x2 
+ .text.xilGetHostToTargetData
+                0x08002314      0x4c8 xil_interface.o
+                0x08002314                xilGetHostToTargetData
+ .text.xilGetTargetToHostPreData
+                0x080027dc       0x3c xil_interface.o
+                0x080027dc                xilGetTargetToHostPreData
+ .text.xilOutput
+                0x08002818       0x2c xil_interface.o
+                0x08002818                xilOutput
+ .text.xilUpdate
+                0x08002844       0x18 xil_interface.o
+                0x08002844                xilUpdate
+ .text.xilGetTargetToHostData
+                0x0800285c      0x5b0 xil_interface.o
+                0x0800285c                xilGetTargetToHostData
+ .text.xilTerminate
+                0x08002e0c       0x1e xil_interface.o
+                0x08002e0c                xilTerminate
+ .text.xilEnable
+                0x08002e2a       0x18 xil_interface.o
+                0x08002e2a                xilEnable
+ .text.xilDisable
+                0x08002e42       0x18 xil_interface.o
+                0x08002e42                xilDisable
+ *fill*         0x08002e5a        0x2 
+ .text.getNextXILIOData
+                0x08002e5c       0x1c xil_interface_lib.o
+ .text.processHostToTargetData
+                0x08002e78       0xa8 xil_interface_lib.o
+ .text.processTargetToHostData
+                0x08002f20       0x80 xil_interface_lib.o
+ .text.processTargetToHostPreData
+                0x08002fa0       0x84 xil_interface_lib.o
+ .text.finalizeCommandResponse
+                0x08003024       0x72 xil_interface_lib.o
+ *fill*         0x08003096        0x2 
+ .text.computeNextState
+                0x08003098      0x228 xil_interface_lib.o
+ .text.xilReadCommandCode
+                0x080032c0       0x88 xil_interface_lib.o
+ .text.xilProcessMsg
+                0x08003348      0x530 xil_interface_lib.o
+                0x08003348                xilProcessMsg
+ .text.xilRun   0x08003878       0x48 xil_interface_lib.o
+                0x08003878                xilRun
+ .text.xilTgtAppSvcCreate
+                0x080038c0        0x6 xil_rtiostream.o
+                0x080038c0                xilTgtAppSvcCreate
+ *fill*         0x080038c6        0x2 
+ .text.xilTgtAppSvcAllocBuffer
+                0x080038c8       0x1c xil_rtiostream.o
+                0x080038c8                xilTgtAppSvcAllocBuffer
+ .text.xilTgtAppSvcGetBufferDataPtr
+                0x080038e4       0x10 xil_rtiostream.o
+                0x080038e4                xilTgtAppSvcGetBufferDataPtr
+ .text.xilTgtAppSvcSend
+                0x080038f4       0x26 xil_rtiostream.o
+                0x080038f4                xilTgtAppSvcSend
+ .text.xilInit  0x0800391a       0x42 xil_services.o
+                0x0800391a                xilInit
+ .text.commsInit
+                0x0800395c       0x34 xilcomms_rtiostream.o
+                0x0800395c                commsInit
+ .text.commsEnqueueBuffer
+                0x08003990       0x74 xilcomms_rtiostream.o
+                0x08003990                commsEnqueueBuffer
+ .text.rtiostreamReadMessage
+                0x08003a04       0x78 xilcomms_rtiostream.o
+                0x08003a04                rtiostreamReadMessage
+ .text.look1_binlxpw
+                0x08003a7c      0x1ce ../bms_f4.o
+                0x08003a7c                look1_binlxpw
+ .text.bms_f4_Chart1_Init
+                0x08003c4a       0x3e ../bms_f4.o
+                0x08003c4a                bms_f4_Chart1_Init
+ .text.bms_f4_Chart1
+                0x08003c88      0x44c ../bms_f4.o
+                0x08003c88                bms_f4_Chart1
+ .text.bms_f4_step
+                0x080040d4     0x2c98 ../bms_f4.o
+                0x080040d4                bms_f4_step
+ .text.bms_f4_initialize
+                0x08006d6c      0x1d0 ../bms_f4.o
+                0x08006d6c                bms_f4_initialize
+ .text.bms_f4_terminate
+                0x08006f3c        0x4 ../bms_f4.o
+                0x08006f3c                bms_f4_terminate
+ .text.rtGetInf
+                0x08006f40       0x5c ../rtGetInf.o
+                0x08006f40                rtGetInf
+ .text.rtGetInfF
+                0x08006f9c       0x16 ../rtGetInf.o
+                0x08006f9c                rtGetInfF
+ *fill*         0x08006fb2        0x2 
+ .text.rtGetMinusInf
+                0x08006fb4       0x5c ../rtGetInf.o
+                0x08006fb4                rtGetMinusInf
+ .text.rtGetMinusInfF
+                0x08007010       0x18 ../rtGetInf.o
+                0x08007010                rtGetMinusInfF
+ .text.rtGetNaN
+                0x08007028       0x5c ../rtGetNaN.o
+                0x08007028                rtGetNaN
+ .text.rtGetNaNF
+                0x08007084       0x20 ../rtGetNaN.o
+                0x08007084                rtGetNaNF
+ .text.rt_InitInfAndNaN
+                0x080070a4       0x88 ../rt_nonfinite.o
+                0x080070a4                rt_InitInfAndNaN
+ .text.rtIsNaN  0x0800712c       0x70 ../rt_nonfinite.o
+                0x0800712c                rtIsNaN
+ .text.rtIsNaNF
+                0x0800719c       0x2e ../rt_nonfinite.o
+                0x0800719c                rtIsNaNF
+ *fill*         0x080071ca        0x2 
+ .text.bms_f4_caRunTests
+                0x080071cc       0x2c C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+                0x080071cc                bms_f4_caRunTests
+ .text.numBits  0x080071f8       0x24 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.getBitsPerMemUnit
+                0x0800721c       0x16 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.getCPUInfo
+                0x08007232      0x212 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.testPass
+                0x08007444       0x36 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.testFail
+                0x0800747a       0x36 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.testWarn
+                0x080074b0       0x36 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.testSkip
+                0x080074e6       0x36 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.testReview
+                0x0800751c       0x36 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.runTest  0x08007552       0x4c C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .text.caVerifyPortableWordSizes
+                0x0800759e       0x54 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+                0x0800759e                caVerifyPortableWordSizes
+ *fill*         0x080075f2        0x2 
+ .text.caVerifyHWImpl
+                0x080075f4      0x47c C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+                0x080075f4                caVerifyHWImpl
+ .text.ceil     0x08007a70      0x100 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+                0x08007a70                ceil
+ .text          0x08007b70      0x378 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x08007b70                __aeabi_drsub
+                0x08007b78                __aeabi_dsub
+                0x08007b78                __subdf3
+                0x08007b7c                __aeabi_dadd
+                0x08007b7c                __adddf3
+                0x08007df4                __floatunsidf
+                0x08007df4                __aeabi_ui2d
+                0x08007e14                __floatsidf
+                0x08007e14                __aeabi_i2d
+                0x08007e38                __aeabi_f2d
+                0x08007e38                __extendsfdf2
+                0x08007e7c                __floatundidf
+                0x08007e7c                __aeabi_ul2d
+                0x08007e8c                __floatdidf
+                0x08007e8c                __aeabi_l2d
+ .text          0x08007ee8      0x424 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x08007ee8                __aeabi_dmul
+                0x08007ee8                __muldf3
+                0x0800813c                __divdf3
+                0x0800813c                __aeabi_ddiv
+ .text          0x0800830c      0x110 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+                0x0800830c                __gtdf2
+                0x0800830c                __gedf2
+                0x08008314                __ltdf2
+                0x08008314                __ledf2
+                0x0800831c                __nedf2
+                0x0800831c                __eqdf2
+                0x0800831c                __cmpdf2
+                0x08008398                __aeabi_cdrcmple
+                0x080083a8                __aeabi_cdcmpeq
+                0x080083a8                __aeabi_cdcmple
+                0x080083b8                __aeabi_dcmpeq
+                0x080083cc                __aeabi_dcmplt
+                0x080083e0                __aeabi_dcmple
+                0x080083f4                __aeabi_dcmpge
+                0x08008408                __aeabi_dcmpgt
+ .text          0x0800841c       0x40 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x0800841c                __aeabi_d2uiz
+                0x0800841c                __fixunsdfsi
+ .text          0x0800845c       0xa0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                0x0800845c                __truncdfsf2
+                0x0800845c                __aeabi_d2f
+ .text.exit     0x080084fc       0x28 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+                0x080084fc                exit
+ .text.__libc_init_array
+                0x08008524       0x48 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+                0x08008524                __libc_init_array
+ .text.memcpy   0x0800856c       0x1c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0800856c                memcpy
+ .text.memset   0x08008588       0x10 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+                0x08008588                memset
+ *(.init)
+ .init          0x08008598        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08008598                _init
+ .init          0x0800859c        0x8 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x080085a4        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x080085a4                _fini
+ .fini          0x080085a8        0x8 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata        0x080085b0       0x1b C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ *fill*         0x080085cb        0x1 
+ .rodata.CA_bms_f4_ExpHW
+                0x080085cc       0x4c C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+                0x080085cc                CA_bms_f4_ExpHW
+ .rodata._global_impure_ptr
+                0x08008618        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x08008618                _global_impure_ptr
+ *(.eh_fram e*)
+
+.eh_frame       0x0800861c        0x0
+ .eh_frame      0x0800861c        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.glue_7         0x0800861c        0x0
+ .glue_7        0x0800861c        0x0 linker stubs
+
+.glue_7t        0x0800861c        0x0
+ .glue_7t       0x0800861c        0x0 linker stubs
+
+.vfp11_veneer   0x0800861c        0x0
+ .vfp11_veneer  0x0800861c        0x0 linker stubs
+
+.v4_bx          0x0800861c        0x0
+ .v4_bx         0x0800861c        0x0 linker stubs
+
+.iplt           0x0800861c        0x0
+ .iplt          0x0800861c        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0800861c                __exidx_start = .
+
+.ARM.exidx      0x0800861c        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0800861c        0x8 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                                 0x10 (size before relaxing)
+                0x08008624                __exidx_end = .
+
+.rel.dyn        0x08008624        0x0
+ .rel.iplt      0x08008624        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08008624                . = ALIGN (0x4)
+                0x08008624                _etext = .
+                0x08008624                _sidata = .
+
+.data           0x20000000      0xb68 load address 0x08008624
+                0x20000000                __data_start__ = .
+                0x20000000                _sdata = __data_start__
+ *(vtable)
+ *(.data*)
+ .data.APBAHBPrescTable
+                0x20000000       0x10 stm32f4xx_rcc.o
+ .data.SystemCoreClock
+                0x20000010        0x4 system_stm32f4xx.o
+                0x20000010                SystemCoreClock
+ .data.AHBPrescTable
+                0x20000014       0x10 system_stm32f4xx.o
+                0x20000014                AHBPrescTable
+ .data.processMsgSuccess
+                0x20000024        0x4 xil_interface_lib.o
+ .data.bms_f4_P
+                0x20000028      0xac8 ../bms_f4_data.o
+                0x20000028                bms_f4_P
+ .data.realmin  0x20000af0        0x8 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .data.denormalAsZero
+                0x20000af8        0x8 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+                0x20000af8                denormalAsZero
+ .data.impure_data
+                0x20000b00       0x60 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x20000b60                . = ALIGN (0x4)
+                0x20000b60                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x20000b60                PROVIDE (__preinit_array_end = .)
+                0x20000b60                . = ALIGN (0x4)
+                0x20000b60                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x20000b60        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000b64                PROVIDE (__init_array_end = .)
+                0x20000b64                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x20000b64        0x4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                [!provide]                PROVIDE (__fini_array_end = .)
+ *(.jcr*)
+                0x20000b68                . = ALIGN (0x4)
+                0x20000b68                __data_end__ = .
+                0x20000b68                _edata = __data_end__
+
+.igot.plt       0x20000b68        0x0 load address 0x0800918c
+ .igot.plt      0x20000b68        0x0 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.bss            0x20000b68     0x1a44 load address 0x08009190
+                0x20000b68                . = ALIGN (0x4)
+                0x20000b68                _sbss = .
+                0x20000b68                __bss_start__ = _sbss
+ *(.bss .bss.*)
+ .bss           0x20000b68       0x1c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss.pwsEnabled
+                0x20000b84        0x1 coder_assumptions_app.o
+ *fill*         0x20000b85        0x3 
+ .bss.pBuffer   0x20000b88        0x4 coder_assumptions_data_stream.o
+ .bss.coderAssumptionsWriteDataPtr
+                0x20000b8c        0x4 coder_assumptions_data_stream.o
+ .bss.coderAssumptionsWriteDataAvail
+                0x20000b90        0x2 coder_assumptions_data_stream.o
+ *fill*         0x20000b92        0x2 
+ .bss.coderAssumpWriteBuffer
+                0x20000b94       0x20 coder_assumptions_rtiostream.o
+ .bss.MW_USART_ERRNO
+                0x20000bb4        0x4 rtiostream_serial_dma_stm32f4xx.o
+                0x20000bb4                MW_USART_ERRNO
+ .bss.UART_rxBuffer
+                0x20000bb8      0x800 rtiostream_serial_dma_stm32f4xx.o
+ .bss.UART_txBuffer
+                0x200013b8      0x400 rtiostream_serial_dma_stm32f4xx.o
+ .bss.UART_Rx   0x200017b8        0x8 rtiostream_serial_dma_stm32f4xx.o
+ .bss.UART_Tx   0x200017c0       0x48 rtiostream_serial_dma_stm32f4xx.o
+ .bss.pBuffer   0x20001808        0x4 xil_data_stream.o
+ .bss.xilWriteBuffer
+                0x2000180c        0x4 xil_data_stream.o
+ .bss.xilWriteDataPtr
+                0x20001810        0x4 xil_data_stream.o
+ .bss.xilWriteDataAvail
+                0x20001814        0x2 xil_data_stream.o
+ *fill*         0x20001816        0x2 
+ .bss.commandResponseType
+                0x20001818        0x4 xil_data_stream.o
+ .bss.currentBufSize.9857
+                0x2000181c        0x2 xil_data_stream.o
+ *fill*         0x2000181e        0x2 
+ .bss.currentBufferPosition.9856
+                0x20001820        0x4 xil_data_stream.o
+ .bss.xil_fcnid0_task1_output_u
+                0x20001824       0x80 xil_interface.o
+ .bss.xil_fcnid0_task1_y
+                0x200018a4       0x90 xil_interface.o
+ .bss.xil_fcnid0_init_y
+                0x20001934       0x90 xil_interface.o
+ .bss.xil_fcnid0_ws_params
+                0x200019c4       0x80 xil_interface.o
+ .bss.initComplete.10775
+                0x20001a44        0x4 xil_interface.o
+ .bss.initComplete.10794
+                0x20001a48        0x4 xil_interface.o
+ .bss.initComplete.10842
+                0x20001a4c        0x4 xil_interface.o
+ .bss.initComplete.10863
+                0x20001a50        0x4 xil_interface.o
+ .bss.xilIODataPtr
+                0x20001a54        0x4 xil_interface_lib.o
+ .bss.isShutdownCommand
+                0x20001a58        0x4 xil_interface_lib.o
+ .bss.cc        0x20001a5c        0xc xil_interface_lib.o
+ .bss.uDataAddress.9895
+                0x20001a68        0x4 xil_interface_lib.o
+ .bss.uDataLength.9896
+                0x20001a6c        0x4 xil_interface_lib.o
+ .bss.xilWriteBuffer
+                0x20001a70       0x80 xil_rtiostream.o
+ .bss.streamID  0x20001af0        0x4 xilcomms_rtiostream.o
+ .bss.xilCommsBuffer
+                0x20001af4       0x80 xilcomms_rtiostream.o
+ *(COMMON)
+ *fill*         0x20001b74        0x4 
+ COMMON         0x20001b78      0x998 ../bms_f4.o
+                0x20001b78                bms_f4_B
+                0x20001d48                bms_f4_U
+                0x20002190                bms_f4_Y
+                0x20002400                bms_f4_DW
+ COMMON         0x20002510       0x24 ../rt_nonfinite.o
+                0x20002510                rtNaNF
+                0x20002514                rtInfF
+                0x20002518                rtInf
+                0x20002520                rtNaN
+                0x20002528                rtMinusInf
+                0x20002530                rtMinusInfF
+ COMMON         0x20002534       0x74 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+                0x20002534                CA_bms_f4_PWSRes
+                0x20002538                CA_bms_f4_ActHW
+                0x20002584                CA_bms_f4_HWRes
+ COMMON         0x200025a8        0x4 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+                0x200025a8                aGlobalInt
+                0x200025ac                . = ALIGN (0x4)
+                0x200025ac                _ebss = .
+                0x200025ac                __bss_end__ = _ebss
+
+.co_stack       0x10000000     0x2040
+                0x10000000                . = ALIGN (0x8)
+                0x10000000                __stack_end__ = .
+ *(.co_stack .co_stack.*)
+ .co_stack      0x10000000     0x2040 startup_stm32f4xx.o
+                0x10000000                pulStack
+                0x10002040                __stack_start__ = .
+                0x10002040                . = ALIGN (0x8)
+                0x10002040                _end_ccmram = .
+                0x10002040                PROVIDE (_sheap = _end_ccmram)
+                0x10010000                PROVIDE (_eheap = ALIGN ((ORIGIN (CCMRAM) + LENGTH (CCMRAM)), 0x8))
+                0x10002040                PROVIDE (__stack = __stack_start__)
+OUTPUT(./bms_f4.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x0000001e       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x00000052       0x1c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000006e       0x34 coder_assumptions_app.o
+ .ARM.attributes
+                0x000000a2       0x34 coder_assumptions_data_stream.o
+ .ARM.attributes
+                0x000000d6       0x34 coder_assumptions_rtiostream.o
+ .ARM.attributes
+                0x0000010a       0x34 misc.o
+ .ARM.attributes
+                0x0000013e       0x34 pil_main_stm32f4xx.o
+ .ARM.attributes
+                0x00000172       0x34 rtiostream_serial_dma_stm32f4xx.o
+ .ARM.attributes
+                0x000001a6       0x34 rtiostream_utils.o
+ .ARM.attributes
+                0x000001da       0x34 startup_stm32f4xx.o
+ .ARM.attributes
+                0x0000020e       0x34 stm32f4xx_dma.o
+ .ARM.attributes
+                0x00000242       0x34 stm32f4xx_gpio.o
+ .ARM.attributes
+                0x00000276       0x34 stm32f4xx_rcc.o
+ .ARM.attributes
+                0x000002aa       0x34 stm32f4xx_usart.o
+ .ARM.attributes
+                0x000002de       0x34 syscalls_stm32f4xx.o
+ .ARM.attributes
+                0x00000312       0x34 system_stm32f4xx.o
+ .ARM.attributes
+                0x00000346       0x34 xil_data_stream.o
+ .ARM.attributes
+                0x0000037a       0x34 xil_interface.o
+ .ARM.attributes
+                0x000003ae       0x34 xil_interface_lib.o
+ .ARM.attributes
+                0x000003e2       0x34 xil_rtiostream.o
+ .ARM.attributes
+                0x00000416       0x34 xil_services.o
+ .ARM.attributes
+                0x0000044a       0x34 xilcomms_rtiostream.o
+ .ARM.attributes
+                0x0000047e       0x34 ../bms_f4.o
+ .ARM.attributes
+                0x000004b2       0x39 ../bms_f4_data.o
+ .ARM.attributes
+                0x000004eb       0x34 ../rtGetInf.o
+ .ARM.attributes
+                0x0000051f       0x34 ../rtGetNaN.o
+ .ARM.attributes
+                0x00000553       0x34 ../rt_nonfinite.o
+ .ARM.attributes
+                0x00000587       0x34 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ .ARM.attributes
+                0x000005bb       0x34 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .ARM.attributes
+                0x000005ef       0x39 C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+ .ARM.attributes
+                0x00000628       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+ .ARM.attributes
+                0x0000065c       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000067a       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000698       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000006b6       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x000006d4       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000006f2       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000726       0x32 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000758       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000078c       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000007c0       0x34 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000007f4       0x1e c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+.comment        0x00000000       0x4c
+ .comment       0x00000000       0x4c coder_assumptions_app.o
+                                 0x4d (size before relaxing)
+ .comment       0x0000004c       0x4d coder_assumptions_data_stream.o
+ .comment       0x0000004c       0x4d coder_assumptions_rtiostream.o
+ .comment       0x0000004c       0x4d misc.o
+ .comment       0x0000004c       0x4d pil_main_stm32f4xx.o
+ .comment       0x0000004c       0x4d rtiostream_serial_dma_stm32f4xx.o
+ .comment       0x0000004c       0x4d rtiostream_utils.o
+ .comment       0x0000004c       0x4d startup_stm32f4xx.o
+ .comment       0x0000004c       0x4d stm32f4xx_dma.o
+ .comment       0x0000004c       0x4d stm32f4xx_gpio.o
+ .comment       0x0000004c       0x4d stm32f4xx_rcc.o
+ .comment       0x0000004c       0x4d stm32f4xx_usart.o
+ .comment       0x0000004c       0x4d syscalls_stm32f4xx.o
+ .comment       0x0000004c       0x4d system_stm32f4xx.o
+ .comment       0x0000004c       0x4d xil_data_stream.o
+ .comment       0x0000004c       0x4d xil_interface.o
+ .comment       0x0000004c       0x4d xil_interface_lib.o
+ .comment       0x0000004c       0x4d xil_rtiostream.o
+ .comment       0x0000004c       0x4d xil_services.o
+ .comment       0x0000004c       0x4d xilcomms_rtiostream.o
+ .comment       0x0000004c       0x4d ../bms_f4.o
+ .comment       0x0000004c       0x4d ../bms_f4_data.o
+ .comment       0x0000004c       0x4d ../rtGetInf.o
+ .comment       0x0000004c       0x4d ../rtGetNaN.o
+ .comment       0x0000004c       0x4d ../rt_nonfinite.o
+ .comment       0x0000004c       0x4d C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(bms_f4_ca.o)
+ .comment       0x0000004c       0x4d C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_hwimpl.o)
+ .comment       0x0000004c       0x4d C:/Users/miche/Documents/GitHub/meltinglab/battery-management/workspace/bms_f4_ert_rtw/coderassumptions/lib/bms_f4_ca.lib(coder_assumptions_flt.o)
+
+.debug_frame    0x00000000      0x2d4
+ .debug_frame   0x00000000       0x30 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(lib_a-s_ceil.o)
+ .debug_frame   0x00000030       0xac c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x000000dc       0x50 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000012c       0xc4 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x000001f0       0x24 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x00000214       0x24 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00000238       0x28 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000260       0x2c c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000028c       0x28 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000002b4       0x20 c:/progra~3/matlab/suppor~1/r2021a/3p.instrset/gnuarm-armcortex.instrset/win/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
