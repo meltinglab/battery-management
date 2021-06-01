@@ -58,6 +58,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#hardware-implementation">Hardware Implementation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -117,7 +118,7 @@ N.B: In order to get the list of in-use toolbox in a project use the following c
    ```
 2. Open the `simulationUI.slx` file under:
    ```sh
-   ...\battery-management\workspace\Simulation\
+   battery-management\workspace\Simulation\
    ```
 
 <!-- USAGE EXAMPLES -->
@@ -134,6 +135,57 @@ In order to test the whole system (plant+controller), just follow these steps:
 
 _For more examples or a detailed description of all the blocks, please refer to the [Documentation](https://github.com/meltinglab/battery-management/wiki)_
 
+## Hardware Implementation
+
+In order to be used in an embedded device, the controller code has been ported to an [STM32F4-Discovery](https://www.st.com/en/evaluation-tools/stm32f4discovery.html) board.
+
+<p align="center">
+  <a href="https://github.com/meltinglab/battery-management">
+    <img src="images/stm32f4-discovery.jpg" width="400" alt="f4-disc">
+  </a>
+</p>
+
+The whole porting process has been carried out by using the [Embedded Coder](https://it.mathworks.com/products/embedded-coder.html) and, in particular, the [support package for STMicroelectronics Discovery board](https://it.mathworks.com/matlabcentral/fileexchange/43093-embedded-coder-support-package-for-stmicroelectronics-discovery-boards).
+
+### Additional prerequisites:
+
+#### Hardware:
+* [STM32F4-Discovery](https://www.st.com/en/evaluation-tools/stm32f4discovery.html) board
+
+_Any other compatible board with the embedded coder can be used but some additional work may be needed._
+
+#### Toolbox:
+
+* embedded_coder
+* stm32_discovery_support_package
+
+### Setup
+#### FW package folder:
+1. Open the `testF4.slx` file under:
+   ```sh
+   battery-management\workspace\Simulation\
+   ```
+2. Double-click on the `bms_f4` model
+3. Click on the `apps` pane
+4. Under `Get Add-Ons` click on `Manage Add-Ons`
+5. Click on the the "Setup Gear" on the right of the "Embedded Coder support package for STMicroelectronics Discovery boards"
+6. Follow the setup instructions and make sure to specify the right firmware package folder:
+   ```sh
+   battery-management\workspace\STM32F4-Discovery_FW_V1.1.0\
+   ```
+#### Discovery COM port
+1. Assuming that you have already opened the `testF4.slx` file
+2. Click on the `Hardware` pane
+3. Click on `Hardware settings`, then open the hardware implementation pane
+4. Under `Target hardware resources` > `PIL`  make sure to select `Serial (USART2)` and then insert the right COM port of your USB-Serial converter
+
+_N.B. A detailed description on how to setup the communication interface for PIL execution can be found [here](https://it.mathworks.com/help/supportpkg/stmicroelectronicsstm32f4discovery/ug/code-verification-and-validation-with-pil-and-external-mode.html)_
+### Usage
+1. Open the `testF4.slx` file under:
+   ```sh
+   battery-management\workspace\Simulation\
+   ```
+2. By clicking on the "Play" button the system will Compile & Deploy two controller models: the first will run on the discovery board, the other directly on your PC.
 
 <!-- ROADMAP -->
 ## Roadmap
