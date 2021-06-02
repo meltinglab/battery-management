@@ -66,7 +66,11 @@
   </ol>
 </details>
 
-
+## Documentation
+The complete documentation of the project is reported in `Final_Report.pdf` at
+   ```sh
+   battery-management\Docs\
+   ```
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -118,7 +122,7 @@ N.B: In order to get the list of in-use toolbox in a project use the following c
    ```
 2. Open the `simulationUI.slx` file under:
    ```sh
-   battery-management\workspace\Simulation\
+   battery-management\workspace\Simulation\MIL\
    ```
 
 <!-- USAGE EXAMPLES -->
@@ -163,7 +167,7 @@ _Any other compatible board with the embedded coder can be used but some additio
 #### FW package folder:
 1. Open the `testF4.slx` file under:
    ```sh
-   battery-management\workspace\Simulation\
+   battery-management\workspace\Simulation\SIL-PIL\
    ```
 2. Double-click on the `bms_f4` model
 3. Click on the `apps` pane
@@ -183,7 +187,7 @@ _N.B. A detailed description on how to setup the communication interface for PIL
 ### Usage
 1. Open the `testF4.slx` file under:
    ```sh
-   battery-management\workspace\Simulation\
+   battery-management\workspace\Simulation\SIL-PIL\
    ```
 2. By clicking on the "Play" button the system will Compile & Deploy two controller models: the first will run on the discovery board, the other directly on your PC.
 
