@@ -27,7 +27,7 @@
   <p align="center">
     Matlab implementation of a Battery Management System.
     <br />
-    <a href="https://github.com/meltinglab/battery-management/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/meltinglab/battery-management/blob/master/Docs/Final_Report.pdf"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/meltinglab/battery-management/blob/master/images/simUI.png">View Demo UI</a>
@@ -48,6 +48,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#documentation">Documentation</a></li>
       </ul>
     </li>
     <li>
@@ -66,11 +67,6 @@
   </ol>
 </details>
 
-## Documentation
-The complete documentation of the project is reported in `Final_Report.pdf` at
-   ```sh
-   battery-management\Docs\
-   ```
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -84,6 +80,12 @@ A complete [simulation enviroment](https://github.com/meltinglab/battery-managem
 
 * [MATLAB](https://it.mathworks.com/products/matlab.html)
 * [Simulink](https://it.mathworks.com/products/simulink.html)
+
+### Documentation
+The complete documentation of the project is reported in `Final_Report.pdf` file under:
+   ```sh
+   battery-management\Docs\
+   ```
 
 
 
