@@ -9,7 +9,7 @@
  *
  * Model version                  : 1.33
  * Simulink Coder version         : 9.5 (R2021a) 14-Nov-2020
- * C/C++ source code generated on : Mon May 31 18:37:05 2021
+ * C/C++ source code generated on : Wed Jun  2 11:40:20 2021
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -709,7 +709,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData
    * Referenced by: '<S8>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data
    * Referenced by: '<S8>/n-D Lookup Table'
@@ -724,7 +724,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_f
    * Referenced by: '<S9>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_o
    * Referenced by: '<S9>/n-D Lookup Table'
@@ -739,7 +739,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_e
    * Referenced by: '<S10>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_m
    * Referenced by: '<S10>/n-D Lookup Table'
@@ -754,7 +754,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_a
    * Referenced by: '<S11>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_c
    * Referenced by: '<S11>/n-D Lookup Table'
@@ -769,7 +769,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_h
    * Referenced by: '<S12>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_h
    * Referenced by: '<S12>/n-D Lookup Table'
@@ -784,7 +784,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_m
    * Referenced by: '<S13>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_g
    * Referenced by: '<S13>/n-D Lookup Table'
@@ -799,7 +799,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_j
    * Referenced by: '<S14>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_gg
    * Referenced by: '<S14>/n-D Lookup Table'
@@ -814,7 +814,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_i
    * Referenced by: '<S15>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_p
    * Referenced by: '<S15>/n-D Lookup Table'
@@ -829,7 +829,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_fr
    * Referenced by: '<S16>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_j
    * Referenced by: '<S16>/n-D Lookup Table'
@@ -844,7 +844,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_g
    * Referenced by: '<S17>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_k
    * Referenced by: '<S17>/n-D Lookup Table'
@@ -859,7 +859,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_l
    * Referenced by: '<S18>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_i
    * Referenced by: '<S18>/n-D Lookup Table'
@@ -874,7 +874,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_md
    * Referenced by: '<S19>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_pr
    * Referenced by: '<S19>/n-D Lookup Table'
@@ -889,7 +889,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_aj
    * Referenced by: '<S20>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ch
    * Referenced by: '<S20>/n-D Lookup Table'
@@ -904,7 +904,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_p
    * Referenced by: '<S21>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_l
    * Referenced by: '<S21>/n-D Lookup Table'
@@ -919,7 +919,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_mk
    * Referenced by: '<S22>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_gb
    * Referenced by: '<S22>/n-D Lookup Table'
@@ -934,7 +934,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_o
    * Referenced by: '<S23>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ll
    * Referenced by: '<S23>/n-D Lookup Table'
@@ -949,7 +949,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_o3
    * Referenced by: '<S24>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_b
    * Referenced by: '<S24>/n-D Lookup Table'
@@ -964,7 +964,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_pv
    * Referenced by: '<S25>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_f
    * Referenced by: '<S25>/n-D Lookup Table'
@@ -979,7 +979,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_mx
    * Referenced by: '<S26>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_hs
    * Referenced by: '<S26>/n-D Lookup Table'
@@ -994,7 +994,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_b
    * Referenced by: '<S27>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_f4
    * Referenced by: '<S27>/n-D Lookup Table'
@@ -1009,7 +1009,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_lf
    * Referenced by: '<S28>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ky
    * Referenced by: '<S28>/n-D Lookup Table'
@@ -1024,7 +1024,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_k
    * Referenced by: '<S29>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ot
    * Referenced by: '<S29>/n-D Lookup Table'
@@ -1039,7 +1039,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_o2
    * Referenced by: '<S30>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_bp
    * Referenced by: '<S30>/n-D Lookup Table'
@@ -1054,7 +1054,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_n
    * Referenced by: '<S31>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_d
    * Referenced by: '<S31>/n-D Lookup Table'
@@ -1069,7 +1069,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_bj
    * Referenced by: '<S32>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_iz
    * Referenced by: '<S32>/n-D Lookup Table'
@@ -1084,7 +1084,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_oo
    * Referenced by: '<S33>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ow
    * Referenced by: '<S33>/n-D Lookup Table'
@@ -1099,7 +1099,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_aa
    * Referenced by: '<S34>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_ko
    * Referenced by: '<S34>/n-D Lookup Table'
@@ -1114,7 +1114,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_d
    * Referenced by: '<S35>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_lc
    * Referenced by: '<S35>/n-D Lookup Table'
@@ -1129,7 +1129,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_f0
    * Referenced by: '<S36>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_mh
    * Referenced by: '<S36>/n-D Lookup Table'
@@ -1144,7 +1144,7 @@ P_bms_f4_T bms_f4_P = {
   /* Computed Parameter: nDLookupTable_tableData_hk
    * Referenced by: '<S37>/n-D Lookup Table'
    */
-  { 2.4100000858306885, 2.3900001049041748, 2.2999999523162842 },
+  { 3.0299999713897705, 3.0, 2.9200000762939453 },
 
   /* Computed Parameter: nDLookupTable_bp01Data_d4
    * Referenced by: '<S37>/n-D Lookup Table'
